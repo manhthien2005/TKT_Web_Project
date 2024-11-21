@@ -1,0 +1,422 @@
+﻿@model Tiki_Web_Project.Models.HomeViewModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - User</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="~/css/Admin/Sidebar.css">
+    <link rel="stylesheet" href="~/css/Admin/UserManagement/user_panel.css">
+    <link rel="stylesheet" href="~/css/Admin/UserManagement/UserManagement.css">
+    <link rel="stylesheet" href="~/css/Admin/UserManagement/delete_user_noti.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="~/img/TKT_Dashboard.png" style="width: 70px; height: auto; margin-right: 10px;">
+                MANAGEMENT
+            </div>
+            <hr>
+            <nav>
+                <span class="title-ul">GENERAL</span>
+                <ul>
+                    <li><a href="@Url.Action("Dashboard", "Admin")"> <i class="fa-solid fa-house"></i>   Dashboard</a></li>
+                </ul>
+                <span class="title-ul">MANAGEMENT</span>
+                <ul>
+                    <li><a href="@Url.Action("UserManagement", "Admin")" class="active"> <i class="fa-solid fa-users"></i> User</a></li>
+                    <li><a href="#" > <i class="fa-solid fa-cart-shopping"></i> Order</a></li>
+                    <li><a href="product.html" > <i class="fa-solid fa-truck-ramp-box"></i> Product</a></li>
+                    <li><a href="#" > <i class="fa-solid fa-shop"></i> Shop</a></li>
+                    <li><a href="#" > <i class="fa-solid fa-globe"></i> Website</a></li>
+                </ul>
+
+                <!-- Tách phần FUNCTION bằng một <br> -->
+                
+                <div class="function-section">
+                    <ul>
+                        <li><a href="user.html"><i class="fa-solid fa-gear"></i> Setting</a></li>
+                        <li><a href="javascript:void(0)" onclick="logoutUser()"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+                    </ul>
+                </div>
+
+            </nav>
+            <div class="user-container">
+                <div class="user-info">
+                    <img src="main.jpg" style="width: 40px; height: auto; border-radius: 50%;">
+                    <div class="info" style="display: flex; flex-direction: column;">
+                        <div class="name">Phan Điền Mạnh Thiên</div>
+                        <div class="email">phandienmanhthienk16@siu.edu.vn</div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main>
+            <div class="table-container">
+                <div class="table-header">
+                    <div class="search-container">
+                        <i class="fa-solid fa-magnifying-glass search_icon"></i>
+                        
+                            <i class="fa-solid fa-list" onclick="toggleListDropdown()"></i>
+                            <input type="text" placeholder="Search Task" class="search-bar" id="search-bar">
+                            <div id="list-dropdown" class="dropdown-content">
+                                <div class="dropdown-section">
+                                    <strong>Search By:</strong>
+                                    <select id="search-by">
+                                        <option value="username">Username</option>
+                                        <option value="name">Name</option>
+                                        <option value="phone">Phone</option>
+                                        <option value="email">Email</option>
+                                        <option value="address">Address</option>
+                                        <option value="nationality">Country</option>
+                                    </select>
+                                </div>
+                                <button class="done-btn" onclick="applySearch()">Done</button>
+                            </div>
+                            
+
+
+                        <span class="selected-count">0 Selected</span>
+                    </div>  
+                        
+                    <div class="btnFunction">
+                        <div class="filter-container">
+                            <button class="filter-btn" onclick="toggleFilterDropdown()"> 
+                                <i class="fa-solid fa-filter"></i> Filter
+                            </button>
+                            <div id="filter-dropdown" class="dropdown-content">
+                                <div class="dropdown-section">
+                                    <strong>Filter By:</strong>
+                                    <select id="filter-by">
+                                        <option value="gender">Gender</option>
+                                        <option value="status">Status</option>
+                                    </select>
+                                </div>
+                        
+                                <div class="dropdown-section" id="gender-options" style="display:none;">
+                                    <strong>Gender: </strong>
+                                    <select id="gender-select">
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </div>
+                        
+                                <div class="dropdown-section" id="status-options" style="display:none;">
+                                    <strong>Status:</strong>
+                                    <select id="status-select">
+                                        <option value="active">Active</option>
+                                        <option value="ban">Ban</option>
+                                    </select>
+                                </div>
+                        
+                                <button class="done-btn" onclick="applyFilter()">Done</button>
+                            </div>
+                        </div>
+
+                        <div class="sort-container">
+                            <button class="sort-btn" onclick="toggleDropdown()"> 
+                                <i class="fa-solid fa-sort"></i> Sort
+                            </button>
+                            
+                            <div id="dropdown" class="dropdown-content">
+                                <div class="dropdown-section">
+                                    <strong>Sort By:</strong>
+                                    <select id="sort-by">
+                                        <option value="username">Username</option>
+                                        <option value="name">Name</option>
+                                        <option value="email">Email</option>
+                                        <option value="address">Address</option>
+                                        <option value="create-date">Create Date</option>
+                                    </select>
+                                </div>
+                                <div class="dropdown-section">
+                                    <strong>Sort Type:</strong>
+                                    <select id="sort-type">
+                                        <option value="az">A → Z</option>
+                                        <option value="za">Z → A</option>
+                                    </select>
+                                </div>
+                                <button class="done-btn" onclick="applySort()">Done</button>
+                            </div>
+                        </div>
+                        <button class="add-user-btn" onclick="showUserPanel()"> <i class="fa-solid fa-user-plus" > </i> Add User</button>
+                        <!-- Thêm user -->
+                        <!-- User Panel Modal -->
+                        <div id="user-panel-overlay" class="user-panel-overlay"></div>
+                        <div id="user-panel" class="user-panel">
+                            <div class="panel-content">
+                                <span class="close-btn" onclick="closeUserPanel()">&times;</span>
+                                
+                                <h2>Add User</h2>
+                                
+                                <form id="user-form" enctype="multipart/form-data">
+                                    <!-- Username -->
+                                    <div class="input-group">
+                                        <label for="Username">Username<span class="required">*</span></label>
+                                        <input type="text" id="username" name="Username" required>
+                                    </div>
+
+                                    <div class="input-group">
+                                        <label for="Password">Password<span class="required">*</span></label>
+                                        <input type="password" id="password" name="Password" required>
+                                    </div>
+                                    
+                                    <!-- Name Field -->
+                                    <div class="input-group">
+                                        <label for="Name">Name<span class="required">*</span></label>
+                                        <input type="text" id="Name" name="Name" required>
+                                    </div>
+                                    
+                                    <!-- Phone Field -->
+                                    <div class="input-group">
+                                        <label for="Phone">Phone<span class="required">*</span></label>
+                                        <input type="tel" id="phone" name="Phone" required>
+                                    </div>
+                                    
+                                    <!-- Email Field -->
+                                    <div class="input-group">
+                                        <label for="Email">Email<span class="required">*</span></label>
+                                        <input type="email" id="email" name="Email" required>
+                                    </div>
+                                    
+                                    <!-- Address Field -->
+                                    <div class="input-group">
+                                        <label for="Address">Address</label>
+                                        <input type="text" id="address" name="Address">
+                                    </div>
+                                    
+                                    <!-- Birthday Field -->
+                                    <div class="input-group">
+                                        <label for="Birthday">Birthday</label>
+                                        <input type="date" id="birthday" name="Birthday">
+                                    </div>
+                                    
+                                    <!-- Role Field (Select) -->
+                                    <div class="input-group">
+                                        <label for="Role">Role</label>
+                                        <select id="role" name="Role" required>
+                                            <option value=0>Admin</option>
+                                            <option value=1>Customer</option>
+                                            <option value=2>Seller</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="input-group">
+                                        <label for="Gender">Gender</label>
+                                        <select id="gender" name="Gender" required>
+                                            <option value="Male">Male</option>
+                                            <option value="Female">Female</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <!-- Country Field -->
+                                    <div class="input-group">
+                                        <label for="Nationality">Nationality</label>
+                                        <input type="text" id="nationality" name="Nationality">
+                                    </div>
+                                    
+                                    <!-- Avatar Field -->
+                                    <div class="input-group">
+                                        <label for="Avatar">Update Avatar </label>
+                                        <input type="file" id="avatar" name="Avatar" accept="image/*">
+                                    </div>
+                                    <div id="success-messages" style="color: green; font-size: 14px; margin-bottom: 0;"></div>
+                                    <button type="submit" class="save-btn">Save</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cần phải tạo animation sổ xuống cho row-->
+                <table class="user-table">
+                    <thead>
+                        <tr>
+                            <th><input type="checkbox" id="select-all"></th>
+                            <th>Username</th>
+                            <th>Name</th>
+                            <th>Phone</th>
+                            <th>Email</th>
+                            <th>Status</th>
+                            <th>Edit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var user in Model.Users)
+                        {
+                            <tr class="user-row" >
+                                <td><input type="checkbox" class="select-user"></td>
+                                <td   class="toggle-column">
+                                    <div style="display: flex; align-items: center; gap: 10px;" data-search="username">
+                                        <img src="~/img/AVT/@user.UserID/@user.Avatar" alt="Avatar">@user.Username
+                                    </div>
+                                </td>
+                                <td class="toggle-column" data-search="name">@user.Name</td>
+                                <td class="toggle-column" data-search="phone">@user.Phone</td>
+                                <td class="toggle-column" data-search="email">@user.Email</td>
+
+                                <td>
+                                    @if (user.Active == 0)
+                                    {
+                                        <span class="status active">Active</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="status unactive">Ban</span>
+                                    }
+                                </td>
+                                <td>
+                                    <button class="edit-btn" onclick="openEditModal(@user.UserID)">✏️</button>
+                                    <button class="delete-btn" onclick="setDeleteUserId(@user.UserID)">🗑️</button>
+                                </td>
+                            </tr>
+                            <tr class="user-details-row"  style="display: none;">
+                                <td colspan="8">
+                                    <div class="user-details" >
+                                        <div class="detail-column">
+                                            <p><strong> <i class="fa-solid fa-location-dot" data-search="address"></i> Address:</strong> @user.Address </p>
+                                            <p><strong> <i class="fa-regular fa-calendar-days"></i>     Create: </strong>@user.Created_At?.ToString("dd/MM/yyyy") </p>
+                                        </div>
+                                        <div class="detail-column">
+                                            <p><strong> <i class="fa-solid fa-cake-candles"></i> Birthday:</strong> @user.Birthday?.ToString("dd/MM/yyyy")</p>
+                                            <p><strong> <i class="fa-solid fa-earth-americas" data-search="nationality"></i> Nationality:</strong> @user.Nationality </p>
+                                        </div>
+                                        <div class="detail-column">
+                                            <p><strong> <i class="fa-solid fa-user"></i> Role:</strong>
+                                                @if (user.Role == 0)
+                                                {
+                                                    <span>Admin</span>
+                                                }
+                                                else if (user.Role == 1)
+                                                {
+                                                    <span>Customer</span>
+                                                }
+                                                else if (user.Role == 2)
+                                                {
+                                                    <span>Seller</span>
+                                                }
+                                            </p>
+                                            <p>
+                                                <strong> <i class="fa-solid fa-user"></i>Gender: </strong>@user.Gender</p>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+                <!-- Modal Delete User -->
+                <div id="deleteModal" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Xác nhận xóa</h5>
+                            <span class="close" id="closeModal">&times;</span>
+                        </div>
+                        <div class="modal-body">
+                            Bạn có chắc chắn muốn xóa người dùng này không?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" id="cancelDelete" class="btn btn-secondary">Hủy</button>
+                            <button type="button" id="confirmDelete" class="btn btn-danger">Xóa</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal Edit User -->
+                <div id="editModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close-btn" onclick="closeEditModal()">&times;</span>
+                        <h2>Edit User Information</h2>
+                        <form id="editUserForm">
+                            <input type="hidden" id="editUserID">
+                            <div>
+                                <label for="editUsername">Username</label>
+                                <input type="text" id="editUsername" name="Username" required />
+                            </div>
+                            <div>
+                                <label for="editName">Name</label>
+                                <input type="text" id="editName" name="Name" required />
+                            </div>
+                            <div>
+                                <label for="editPhone">Phone</label>
+                                <input type="text" id="editPhone" name="Phone" required />
+                            </div>
+                            <div>
+                                <label for="editEmail">Email</label>
+                                <input type="email" id="editEmail" name="Email" required />
+                            </div>
+                            <div>
+                                <label for="editAddress">Address</label>
+                                <input type="text" id="editAddress" name="Address" />
+                            </div>
+                            <div>
+                                <label for="editBirthday">Birthday</label>
+                                <input type="date" id="editBirthday" name="Birthday" />
+                            </div>
+                            <div>
+                                <label for="editNationality">Nationality</label>
+                                <input type="text" id="editNationality" name="Nationality" />
+                            </div>
+                            <div>
+                                <label for="editRole">Role</label>
+                                <select id="editRole" name="Role">
+                                    <option value="0">Admin</option>
+                                    <option value="1">Customer</option>
+                                    <option value="2">Seller</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="editGender">Gender</label>
+                                <select id="editGender" name="Gender">
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <button type="submit" onclick="saveUserChanges()">Save Changes</button>
+                        </form>
+                    </div>
+                </div>
+
+           </div>
+        </main>
+    </div>
+
+    <script>
+        
+        document.querySelectorAll('.select-user').forEach(checkbox => {
+            checkbox.addEventListener('change', function() {
+                const row = this.closest('tr'); // Lấy dòng chứa checkbox
+                if (this.checked) {
+                    row.classList.add('selected'); // Thêm lớp 'selected' khi checkbox được chọn
+                } else {
+                    row.classList.remove('selected'); // Xóa lớp 'selected' khi checkbox bị bỏ chọn
+                }
+            });
+        });
+    </script>
+    <script src="~/js/Admin/UserManagement/Select_Row.js"></script>
+    <script src="~/js/Admin/UserManagement/Add_User.js"></script>
+    <script src="~/js/Admin/UserManagement/Show_User_Detail.js"></script>
+    <script src="~/js/Admin/UserManagement/Search_By_Category.js"></script>
+    <script src="~/js/Admin/UserManagement/Filter_By.js"></script>
+    <script src="~/js/Admin/UserManagement/Sort_By.js"></script>
+    <script src="~/js/Admin/UserManagement/Show_Add_User_Panel.js"></script>
+    <script src="~/js/Admin/UserManagement/Delete_User.js"></script>
+    <script src="~/js/Admin/UserManagement/Edit_User.js"></script>
+    <script src="~/js/Account/Logout.js"></script>
+
+</body>
+</html>

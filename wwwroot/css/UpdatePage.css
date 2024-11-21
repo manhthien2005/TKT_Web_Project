@@ -1,0 +1,283 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+.Container {
+    font-family: Inter,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.15;
+    text-size-adjust: 100%;
+    box-sizing: border-box;
+    width: 1270px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.AccountLayout {
+    display: flex;
+    width: 100%;
+    margin: 0px auto 20px;
+    flex-wrap: wrap;
+}
+
+.BreadcrumbWrapper {
+    font-family: Inter,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.15;
+    text-size-adjust: 100%;
+    box-sizing: border-box;
+    background-color: rgb(245, 245, 250);
+}
+
+    .BreadcrumbWrapper .breadcrumb {
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+    }
+
+    .BreadcrumbWrapper a.breadcrumb-item {
+        position: relative;
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+        height: 40px;
+        color: rgb(128, 128, 137);
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 300;
+        white-space: nowrap;
+    }
+
+    .BreadcrumbWrapper .icon.icon-next {
+        margin-left: 5.5px;
+        margin-right: 8.5px;
+    }
+
+    .BreadcrumbWrapper a.breadcrumb-item:last-child {
+        color: rgb(56, 56, 61);
+        cursor: default;
+        overflow: hidden;
+    }
+
+.StyledSideBar {
+    font-family: Inter,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.15;
+    text-size-adjust: 100%;
+    box-sizing: border-box;
+    width: 250px;
+    margin-right: 17px;
+}
+
+.StyledAvatar {
+    font-family: Inter,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.15;
+    text-size-adjust: 100%;
+    box-sizing: border-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding-left: 7px;
+    margin: 0px 0px 12px;
+}
+
+.StyledAvatar info {
+    -webkit-locale: "vi";
+    --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+    --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Free";
+    --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
+    -webkit-font-smoothing: antialiased;
+    font-family: Inter,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.15;
+    text-size-adjust: 100%;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+    .StyledAvatar img {
+        width: 45px;
+        margin: 0px 12px 0px 0px;
+        border-radius: 50%;
+    }
+
+    .StyledAvatar .info {
+        flex: 1 1 0%;
+        font-size: 13px;
+        line-height: 15px;
+        color: rgb(51, 51, 51);
+        font-weight: 300;
+    }
+
+    .StyledAvatar .info strong {
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 400;
+        display: block;
+        margin: 4px 0px 0px;
+    }
+
+    .StyledNav {
+        font-family: Inter,Helvetica,Arial,sans-serif;
+        line-height: 1.15;
+        text-size-adjust: 100%;
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        font-size: 13px;
+    }
+
+    .StyledNav a {
+        font-family: Inter,Helvetica,Arial,sans-serif;
+        line-height: 1.15;
+        text-size-adjust: 100%;
+        list-style: none;
+        font-size: 13px;
+        box-sizing: border-box;
+        text-decoration: none;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        padding: 7px 18px;
+/*        background-color: rgb(235, 235, 240);*/
+        color: rgb(0, 0, 0);
+    }
+
+    .StyledNav a:hover {
+        background-color: rgb(235, 235, 240);
+        color: rgb(0, 0, 0);
+    }
+
+    .StyledNav a svg, .StyledNav a .icon {
+        width: 24px;
+        height: 24px;
+        margin: 0px 22px 0px 0px;
+        font-size: 24px;
+        color: rgb(155, 155, 155);
+    }
+
+
+.StyledAccountLayoutInner {
+    font-family: Inter,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.15;
+    text-size-adjust: 100%;
+    box-sizing: border-box;
+    flex: 1 1 0%;
+    overflow: hidden;
+}
+
+.StyledHeading {
+    font-family: Inter,Helvetica,Arial,sans-serif;
+    text-size-adjust: 100%;
+    box-sizing: border-box;
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 300;
+    margin: 4px 0px 12px;
+}
+
+.StyleInfoPage {
+    background-color: rgb(255, 255, 255);
+    padding: 30px 20px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+    .StyleInfoPage form {
+        width: 400px;
+        padding: 16px;
+        border: 1px solid rgb(235, 235, 240);
+        box-sizing: border-box;
+        border-radius: 4px;
+    }
+
+    .StyleInfoPage .form-control {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 0px 34px;
+    }
+
+    .StyleInfoPage .input-label {
+        font-size: 14px;
+        color: rgb(56, 56, 61);
+        margin-bottom: 4px;
+    }
+
+    .StyleInfoPage .form-control > div {
+        display: flex;
+        flex: 1 1 0%;
+        position: relative;
+        z-index: 1;
+    }
+
+
+.StyledInput {
+    font-family: Inter,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.15;
+    text-size-adjust: 100%;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+    .StyledInput input {
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+        height: 36px;
+        width: 100%;
+        border-radius: 4px;
+        padding: 10px 12px;
+        line-height: 20px;
+        outline: none;
+        flex: 1 1 0%;
+        border: 1px solid rgb(196, 196, 207);
+    }
+
+    .StyledInput .icon-left {
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 24px;
+    }
+
+    .StyledInput input.with-icon-left {
+        padding-left: 40px;
+    }
+
+    .StyledInput .form-control .hint-message {
+        color: rgb(56, 56, 61);
+        font-size: 11px;
+        position: absolute;
+        top: 40px;
+    }
+
+.StyledBtnSubmit {
+    border: 0px;
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    background-color: rgb(11, 116, 229);
+    cursor: pointer;
+}
+

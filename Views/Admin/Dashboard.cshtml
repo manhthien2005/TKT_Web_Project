@@ -1,0 +1,130 @@
+﻿@model Tiki_Web_Project.Models.HomeViewModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="~/css/Admin/Dashboard/Dashboard.css">
+    <link rel="stylesheet" href="~/css/Admin/Sidebar.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="~/img/TKT_Dashboard.png" style="width: 70px; height: auto; margin-right: 10px;">
+                MANAGEMENT
+            </div>
+            <hr>
+            <nav>
+                <span class="title-ul">GENERAL</span>
+                <ul>
+                    <li><a href="@Url.Action("Dashboard", "Admin")" class="active"> <i class="fa-solid fa-house"></i>   Dashboard</a></li>
+                </ul>
+                <span class="title-ul">MANAGEMENT</span>
+                <ul>
+                    <li><a href="@Url.Action("UserManagement", "Admin")"> <i class="fa-solid fa-users"></i> User</a></li>
+                    <li><a href="#"> <i class="fa-solid fa-cart-shopping"></i> Order</a></li>
+                    <li><a href="product.html"> <i class="fa-solid fa-truck-ramp-box"></i> Product</a></li>
+                    <li><a href="#"> <i class="fa-solid fa-shop"></i> Shop</a></li>
+                    <li><a href="#"> <i class="fa-solid fa-globe"></i> Website</a></li>
+                </ul>
+
+                <!-- Tách phần FUNCTION bằng một <br> -->
+
+                <div class="function-section">
+                    <ul>
+                        <li><a href="user.html"><i class="fa-solid fa-gear"></i> Setting</a></li>
+                        <li><a href="user.html"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+                    </ul>
+                </div>
+
+            </nav>
+            <div class="user-container">
+                <div class="user-info">
+                    <img src="main.jpg" style="width: 40px; height: auto; border-radius: 50%;">
+                    <div class="info" style="display: flex; flex-direction: column;">
+                        <div class="name">Phan Điền Mạnh Thiên</div>
+                        <div class="email">phandienmanhthienk16@siu.edu.vn</div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Top Bar -->
+            <div class="top-bar">
+                <input type="text" placeholder="Search">
+                <div class="date-range">18 Oct 2024 - 18 Nov 2024</div>
+            </div>
+
+            <!-- Dashboard Content -->
+            <section class="dashboard">
+                <div class="dashboard-item total-shop">
+                    <div class="item-header">
+                        <div class="item-title">
+                            <i class="fa-solid fa-shop "></i>
+                            <p>Shop</p>
+                        </div>
+                        <div class="item-update">
+                            <p>Now</p>
+                        </div>
+                    </div>
+
+                    <h2>@ViewBag.ShopCount</h2>
+
+
+                </div>
+
+
+
+                <div class="dashboard-item income">
+                    <div class="item-header">
+                        <div class="item-title">
+                            <i class="fa-solid fa-users"></i>
+                            <p>User</p>
+                        </div>
+                        <div class="item-update">
+                            <p>Now</p>
+                        </div>
+                    </div>
+
+                     <h2>@ViewBag.UserCount</h2>
+                </div>
+
+                <div class="dashboard-item expense">
+                    <div class="item-header">
+                        <div class="item-title">
+                            <i class="fa-solid fa-truck-ramp-box"></i>
+                            <p>Product</p>
+                        </div>
+                        <div class="item-update">
+                            <p>Now</p>
+                        </div>
+                    </div>
+
+                     <h2>@ViewBag.ProductCount</h2>
+                </div>
+            </section>
+            <div class="dashboard-item chart">
+                <div class="tab-menu">
+                    <div onclick="loadData('shop')">Shop</div>
+                    <div onclick="loadData('user')">User</div>
+                    <div onclick="loadData('product')">Product</div>
+                </div>
+
+                <div class="tab-content">
+                    <canvas id="lineChart"></canvas>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,374 @@
+﻿@model Tiki_Web_Project.Models.HomeViewModel
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/css/HomePage/HomePage.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Thêm link CSS hoặc script khác tại đây -->
+</head>
+<body>
+    <div class="MainPage">
+        <div class="MainContainer">
+            <div class="ListCategory">
+                <div class="ListItems"> 
+                    <div class="Title">Danh Mục</div>
+                     @foreach (var category in Model.Categories)
+                     {
+                        <div>
+                            <div class="Items">
+                                <a title="@category.Name" href="@Url.Action("ShowProduct_ByCategory", "Home", new { id = category.CategoryID })">
+                                    <div class="IconStyle">
+                                        <picture>
+                                            <img src="~/img/Categories/@category.ImageUrl"
+                                                 width="32"
+                                                 height="32"
+                                                 style="width:32px;height:32px;opacity:1" />
+                                        </picture>
+                                    </div>
+                                        <div title="@category.Name" class="ContentStyle">@category.Name</div>
+                                </a>
+                            </div>
+                        </div>
+                     }
+                </div>
+
+                <div class="ListItems">
+                    <div class="Title">Tiện Ích</div>
+                    @foreach (var service in Model.Services)
+                     {
+                        <div>
+                            <div class="Items">
+                                <a title="@service.Name" href="/nha-sach-tiki/c8322">
+                                    <div class="IconStyle">
+                                        <picture>
+                                            <source type="image/webp" srcset="https://salt.tikicdn.com/cache/100x100/ts/category/ed/20/60/afa9b3b474bf7ad70f10dd6443211d5f.png.webp 1x, https://salt.tikicdn.com/cache/100x100/ts/category/ed/20/60/afa9b3b474bf7ad70f10dd6443211d5f.png.webp 2x">
+                                            <img srcset="https://salt.tikicdn.com/cache/100x100/ts/category/ed/20/60/afa9b3b474bf7ad70f10dd6443211d5f.png 1x, https://salt.tikicdn.com/cache/100x100/ts/category/ed/20/60/afa9b3b474bf7ad70f10dd6443211d5f.png 2x"
+                                                 width="32"
+                                                 height="32"
+                                                 alt="@service.Name"
+                                                 style="width:32px;height:32px;opacity:1" />
+                                        </picture>
+                                    </div>
+                                    <div title="@service.Name" class="ContentStyle">@service.Name</div>
+                                </a>
+                            </div>
+                        </div>
+                     }
+                </div>
+
+            </div>
+            <div class="Shop">
+                    <div class="BannersCarouselStyled">
+                        <div class="ContainerWidget">
+                            <div class="StyledSimpleSlider">
+                                <span class="icon-prev" id="prevBtn" >
+                                    <svg width="20" height="20" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0899 14.5899C11.7645 14.9153 11.2368 14.9153 10.9114 14.5899L5.91139 9.58991C5.58596 9.26447 5.58596 8.73683 5.91139 8.4114L10.9114 3.41139C11.2368 3.08596 11.7645 3.08596 12.0899 3.41139C12.4153 3.73683 12.4153 4.26447 12.0899 4.58991L7.67916 9.00065L12.0899 13.4114C12.4153 13.7368 12.4153 14.2645 12.0899 14.5899Z" fill="#0A68FF"></path>
+                                    </svg>
+                                </span>
+                                <div class="WidgetContent">
+                                <span class="slider" style="gap: 0px; transform: translateX(0px); transition: 0.5s ease-in-out;">
+                                        <div class="ProductsLine_WrapItemStyled" style="display: flex; transition: transform 0.5s ease-in-out;">
+                                                <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(calc(50% - 12px), 1fr)); grid-auto-flow: row; gap: 12px;">
+                                                    <div>
+                                                        <a alt="premium-banner-0" href="https://tiki.vn/khuyen-mai/rohto-nhat-ban-chinh-hang?itm_campaign=HMP_YPD_TKA_BNA_UNK_ALL_ALL_UNK_UNK_UNK_TMSX.b07bb671-f246-4b1b-84a4-5c8dc352c7f1&amp;itm_medium=CPD&amp;itm_source=tiki-ads&amp;tmsx=b07bb671-f246-4b1b-84a4-5c8dc352c7f1" class="BannerStyle" style="aspect-ratio: 16 / 9;">
+                                                            <picture class="webpimg-container">
+                                                                <source type="image/webp" srcset="https://salt.tikicdn.com/cache/w750/ts/tikimsp/17/af/1f/5e113e63aae8a0993ee7b6870bc3c984.png.webp 1x, https://salt.tikicdn.com/cache/w750/ts/tikimsp/17/af/1f/5e113e63aae8a0993ee7b6870bc3c984.png.webp 2x"><img srcset="https://salt.tikicdn.com/cache/w750/ts/tikimsp/17/af/1f/5e113e63aae8a0993ee7b6870bc3c984.png 1x, https://salt.tikicdn.com/cache/w750/ts/tikimsp/17/af/1f/5e113e63aae8a0993ee7b6870bc3c984.png 2x" alt="premium-banner-0" loading="eager" class="StyledImg" style="aspect-ratio: 16 / 9; width: 100%; height: 100%; opacity: 1;">
+                                                            </picture>
+                                                        </a>
+                                                    </div>
+                                                    <div>
+                                                        <a alt="premium-banner-1" href="https://tiki.vn/khuyen-mai/bpns-running-l-foc-co-brands-hb?itm_campaign=HMP_YPD_TKA_BNA_UNK_ALL_ALL_UNK_UNK_UNK_TMSX.8986de91-f525-4b3d-b844-f04a870e1bc1&amp;itm_medium=CPD&amp;itm_source=tiki-ads&amp;tmsx=8986de91-f525-4b3d-b844-f04a870e1bc1" class="BannerStyle" style="aspect-ratio: 16 / 9;">
+                                                            <picture class="webpimg-container">
+                                                                <source type="image/webp" srcset="https://salt.tikicdn.com/cache/w750/ts/tikimsp/31/8a/05/146fd3b979860c4fe43ed6a3d8335b8e.png.webp 1x, https://salt.tikicdn.com/cache/w750/ts/tikimsp/31/8a/05/146fd3b979860c4fe43ed6a3d8335b8e.png.webp 2x"><img srcset="https://salt.tikicdn.com/cache/w750/ts/tikimsp/31/8a/05/146fd3b979860c4fe43ed6a3d8335b8e.png 1x, https://salt.tikicdn.com/cache/w750/ts/tikimsp/31/8a/05/146fd3b979860c4fe43ed6a3d8335b8e.png 2x" alt="premium-banner-1" loading="eager" class="StyledImg" style="aspect-ratio: 16 / 9; width: 100%; height: 100%; opacity: 1;">
+                                                            </picture>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                        
+                                        </div>
+                                    <div class="ProductsLine_WrapItemStyled" style="display: flex; transition: transform 0.5s ease-in-out;">
+                                        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(calc(50% - 12px), 1fr)); grid-auto-flow: row; gap: 12px;">
+                                            <div>
+                                                <a alt="premium-banner-0" href="https://tiki.vn/khuyen-mai/rohto-nhat-ban-chinh-hang?itm_campaign=HMP_YPD_TKA_BNA_UNK_ALL_ALL_UNK_UNK_UNK_TMSX.b07bb671-f246-4b1b-84a4-5c8dc352c7f1&amp;itm_medium=CPD&amp;itm_source=tiki-ads&amp;tmsx=b07bb671-f246-4b1b-84a4-5c8dc352c7f1" class="BannerStyle" style="aspect-ratio: 16 / 9;">
+                                                    <picture class="webpimg-container">
+                                                        <source type="image/webp" srcset="https://salt.tikicdn.com/cache/w750/ts/tikimsp/17/af/1f/5e113e63aae8a0993ee7b6870bc3c984.png.webp 1x, https://salt.tikicdn.com/cache/w750/ts/tikimsp/17/af/1f/5e113e63aae8a0993ee7b6870bc3c984.png.webp 2x"><img srcset="https://salt.tikicdn.com/cache/w750/ts/tikimsp/17/af/1f/5e113e63aae8a0993ee7b6870bc3c984.png 1x, https://salt.tikicdn.com/cache/w750/ts/tikimsp/17/af/1f/5e113e63aae8a0993ee7b6870bc3c984.png 2x" alt="premium-banner-0" loading="eager" class="StyledImg" style="aspect-ratio: 16 / 9; width: 100%; height: 100%; opacity: 1;">
+                                                    </picture>
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <a alt="premium-banner-1" href="https://tiki.vn/khuyen-mai/bpns-running-l-foc-co-brands-hb?itm_campaign=HMP_YPD_TKA_BNA_UNK_ALL_ALL_UNK_UNK_UNK_TMSX.8986de91-f525-4b3d-b844-f04a870e1bc1&amp;itm_medium=CPD&amp;itm_source=tiki-ads&amp;tmsx=8986de91-f525-4b3d-b844-f04a870e1bc1" class="BannerStyle" style="aspect-ratio: 16 / 9;">
+                                                    <picture class="webpimg-container">
+                                                        <source type="image/webp" srcset="https://salt.tikicdn.com/cache/w750/ts/tikimsp/31/8a/05/146fd3b979860c4fe43ed6a3d8335b8e.png.webp 1x, https://salt.tikicdn.com/cache/w750/ts/tikimsp/31/8a/05/146fd3b979860c4fe43ed6a3d8335b8e.png.webp 2x"><img srcset="https://salt.tikicdn.com/cache/w750/ts/tikimsp/31/8a/05/146fd3b979860c4fe43ed6a3d8335b8e.png 1x, https://salt.tikicdn.com/cache/w750/ts/tikimsp/31/8a/05/146fd3b979860c4fe43ed6a3d8335b8e.png 2x" alt="premium-banner-1" loading="eager" class="StyledImg" style="aspect-ratio: 16 / 9; width: 100%; height: 100%; opacity: 1;">
+                                                    </picture>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    </span>
+                                    <div class="pagination" style="width: 100%; display: flex; justify-content: center; align-items: center; gap: 4px; margin-top: 8px;">
+                                        <div class="page" style="width: 24px; height: 2px; background: rgb(10, 104, 255); border-radius: 4px;"></div>
+                                        <div class="page" style="width: 16px; height: 2px; background: rgba(0, 0, 0, 0.05); border-radius: 4px;"></div>
+                                        <div class="page" style="width: 16px; height: 2px; background: rgba(0, 0, 0, 0.05); border-radius: 4px;"></div>
+                                    </div>
+                                </div>
+                                <span class="icon-next" id="nextBtn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 18 18" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.91107 3.41107C6.23651 3.08563 6.76414 3.08563 7.08958 3.41107L12.0896 8.41107C12.415 8.73651 12.415 9.26415 12.0896 9.58958L7.08958 14.5896C6.76414 14.915 6.23651 14.915 5.91107 14.5896C5.58563 14.2641 5.58563 13.7365 5.91107 13.4111L10.3218 9.00033L5.91107 4.58958C5.58563 4.26414 5.58563 3.73651 5.91107 3.41107Z" fill="#0A68FF"></path>
+                                        </svg>
+                                </span>
+                            </div>
+                        </div>
+                </div>
+                <div class="QuickLinksContainer" style="min-height: 126px;">
+                    <div class="QuickLinksBorder">
+                        @foreach (var quickLink in Model.QuickLinks)
+                        {
+                            <div class="QuickLinksItems">
+                                <a href="https://tiki.vn/khuyen-mai/hero-top-san-pham-ban-chay">
+                                    <div class="QuickLinksIcon" style="width: 44px; height: 44px; justify-content: center;">
+                                        <picture class="webpimg-container">
+                                            <source type="image/webp" srcset="https://salt.tikicdn.com/ts/upload/2f/52/8e/00ab5fbea9d35fcc3cadbc28d7c6b14e.png">
+                                            <img srcset="https://salt.tikicdn.com/ts/upload/2f/52/8e/00ab5fbea9d35fcc3cadbc28d7c6b14e.png" width="44" height="44" alt="quick-link-icon" class="StyledImg" style="width: 44px; height: 44px; opacity: 1;">
+                                        </picture>
+                                    </div>
+                                    <div class="QuickLinksTitle" style="color: rgb(217, 56, 67);">@quickLink.Name</div>
+                                </a>
+                            </div>
+                        }
+
+                        
+                    </div>
+                </div>
+                <div class="ProductList">
+                    <div class="WidgetHeader">
+                        <div class="WidgetHeaderTitle">
+                            <div style="display: flex; gap: 8px; align-items: center;">
+                                <img src="https://salt.tikicdn.com/ts/upload/f8/77/0b/0923990ed377f50c3796f9e6ce0dddde.png"
+                                     alt="badge"
+                                     width="204"
+                                     height="32">
+                            </div>
+                            <a href="https://tiki.vn/khuyen-mai/hero-top-san-pham-ban-chay"
+                               class="WidgetHeaderCTA">
+                                Xem tất cả
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ProductSlide">
+                        <span class="Product icon-prev" id="ProPrevBtn">
+                            <svg width="20" height="20" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M12.0899 14.5899C11.7645 14.9153 11.2368 14.9153 10.9114 14.5899L5.91139 9.58991C5.58596 9.26447 5.58596 8.73683 5.91139 8.4114L10.9114 3.41139C11.2368 3.08596 11.7645 3.08596 12.0899 3.41139C12.4153 3.73683 12.4153 4.26447 12.0899 4.58991L7.67916 9.00065L12.0899 13.4114C12.4153 13.7368 12.4153 14.2645 12.0899 14.5899Z"
+                                      fill="#0A68FF">
+                                </path>
+                            </svg>
+                        </span>
+                        <div class="ProductContent">
+                            <span class="ProductSlider" style="gap: 8px; transform: translateX(0px); transition: 0.5s ease-in-out;">
+                                @foreach (var product in Model.Products)
+                                {
+                                    var categoryID = product.SubCategory.CategoryID;
+                                    <div class="product-item-wrapper" style="display: -webkit-box; width: 181.667px;">
+                                        <div style="height: 100%; width: 100%;">
+                                            <a class="product-link"
+                                               href="@Url.Action("Index", "Product", new { id = product.ProductID })">
+
+                                                <span class="product-content">
+                                                    <div style="position: relative;">
+                                                        <div class="thumbnail">
+                                                            <div class="image-wrapper">
+                                                                <picture class="webp-image-container">
+                                                                    <img src="@Url.Content("~/img/ProductImage/" + categoryID + "/" + product.SubCategory.SubID + "/" + product.ProductID + "/Thumbnail/main.jpg")"
+                                                                    class="product-image"
+                                                                    style="width: 100%; height: 100%; opacity: 1;">
+                                                                </picture>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="badge" style="position: absolute; top: 8px; left: 8px; z-index: 2;"></div>
+
+                                                        <div class="info-badges" style="position: absolute; inset: 0px; z-index: 2;">
+                                                            <picture class="webp-image-container">
+                                                                <source type="image/webp" srcset="https://salt.tikicdn.com/ts/upload/12/e2/4a/c5226426ee9429b0050449ae5403c9cf.png">
+                                                                <img srcset="https://salt.tikicdn.com/ts/upload/12/e2/4a/c5226426ee9429b0050449ae5403c9cf.png"
+                                                                     width="100%" height="100%"
+                                                                     alt="product_image_badge"
+                                                                     class="badge-image"
+                                                                     style="width: 100%; height: 100%; opacity: 1;">
+                                                            </picture>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="product-card-content">
+                                                        <div class="info">
+                                                            <div style="display: flex; flex-direction: column; gap: 4px;">
+                                                                <div class="name-wrapper" style="display: flex; flex-direction: column; gap: 4px; height: 58px;">
+                                                                    <h3 class="product-name">
+                                                                        @product.Name
+                                                                    </h3>
+                                                                    <div class="rating-list">
+                                                                        <div class="star-rating" style="font-size: 12px; display: inline-block;">
+                                                                            <div style="z-index: 2; position: absolute; left: auto; top: auto; bottom: auto; width: 100%; overflow: hidden;">
+                                                                                @for (int i = 0; i < 5; i++)
+                                                                                {
+                                                                                    <svg width="12" height="12" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 12px; height: 12px;">
+                                                                                        <g clip-path="url(#a)">
+                                                                                            <path d="M6.448 2.029a.5.5 0 0 0-.896 0L4.287 4.59l-2.828.41a.5.5 0 0 0-.277.854l2.046 1.994-.483 2.816a.5.5 0 0 0 .726.528L6 9.863l2.53 1.33a.5.5 0 0 0 .725-.527l-.483-2.817 2.046-1.994a.5.5 0 0 0-.277-.853L7.713 4.59 6.448 2.029Z" fill="#FFC400"></path>
+                                                                                        </g>
+                                                                                        <defs>
+                                                                                            <clipPath id="a">
+                                                                                                <path fill="#fff" transform="translate(1 1.5)" d="M0 0h10v10H0z"></path>
+                                                                                            </clipPath>
+                                                                                        </defs>
+                                                                                    </svg>
+                                                                                }
+                                                                            </div>
+                                                                            <!-- Star Icons (Empty) -->
+                                                                            <svg width="12" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                <g clip-path="url(#a)">
+                                                                                    <path d="M6.448 2.029a.5.5 0 0 0-.896 0L4.287 4.59l-2.828.41a.5.5 0 0 0-.277.854l2.046 1.994-.483 2.816a.5.5 0 0 0 .726.528L6 9.863l2.53 1.33a.5.5 0 0 0 .725-.527l-.483-2.817 2.046-1.994a.5.5 0 0 0-.277-.853L7.713 4.59 6.448 2.029Z" fill="#DDDDE3"></path>
+                                                                                </g>
+                                                                                <defs>
+                                                                                    <clipPath id="a">
+                                                                                        <path fill="#fff" transform="translate(1 1.5)" d="M0 0h10v10H0z"></path>
+                                                                                    </clipPath>
+                                                                                </defs>
+                                                                            </svg>
+                                                                            <svg width="12" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                <g clip-path="url(#a)">
+                                                                                    <path d="M6.448 2.029a.5.5 0 0 0-.896 0L4.287 4.59l-2.828.41a.5.5 0 0 0-.277.854l2.046 1.994-.483 2.816a.5.5 0 0 0 .726.528L6 9.863l2.53 1.33a.5.5 0 0 0 .725-.527l-.483-2.817 2.046-1.994a.5.5 0 0 0-.277-.853L7.713 4.59 6.448 2.029Z" fill="#DDDDE3"></path>
+                                                                                </g>
+                                                                                <defs>
+                                                                                    <clipPath id="a">
+                                                                                        <path fill="#fff" transform="translate(1 1.5)" d="M0 0h10v10H0z"></path>
+                                                                                    </clipPath>
+                                                                                </defs>
+                                                                            </svg>
+                                                                            <svg width="12" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                <g clip-path="url(#a)">
+                                                                                    <path d="M6.448 2.029a.5.5 0 0 0-.896 0L4.287 4.59l-2.828.41a.5.5 0 0 0-.277.854l2.046 1.994-.483 2.816a.5.5 0 0 0 .726.528L6 9.863l2.53 1.33a.5.5 0 0 0 .725-.527l-.483-2.817 2.046-1.994a.5.5 0 0 0-.277-.853L7.713 4.59 6.448 2.029Z" fill="#DDDDE3"></path>
+                                                                                </g>
+                                                                                <defs>
+                                                                                    <clipPath id="a">
+                                                                                        <path fill="#fff" transform="translate(1 1.5)" d="M0 0h10v10H0z"></path>
+                                                                                    </clipPath>
+                                                                                </defs>
+                                                                            </svg>
+                                                                            <svg width="12" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                <g clip-path="url(#a)">
+                                                                                    <path d="M6.448 2.029a.5.5 0 0 0-.896 0L4.287 4.59l-2.828.41a.5.5 0 0 0-.277.854l2.046 1.994-.483 2.816a.5.5 0 0 0 .726.528L6 9.863l2.53 1.33a.5.5 0 0 0 .725-.527l-.483-2.817 2.046-1.994a.5.5 0 0 0-.277-.853L7.713 4.59 6.448 2.029Z" fill="#DDDDE3"></path>
+                                                                                </g>
+                                                                                <defs>
+                                                                                    <clipPath id="a">
+                                                                                        <path fill="#fff" transform="translate(1 1.5)" d="M0 0h10v10H0z"></path>
+                                                                                    </clipPath>
+                                                                                </defs>
+                                                                            </svg>
+                                                                            <svg width="12" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                <g clip-path="url(#a)">
+                                                                                    <path d="M6.448 2.029a.5.5 0 0 0-.896 0L4.287 4.59l-2.828.41a.5.5 0 0 0-.277.854l2.046 1.994-.483 2.816a.5.5 0 0 0 .726.528L6 9.863l2.53 1.33a.5.5 0 0 0 .725-.527l-.483-2.817 2.046-1.994a.5.5 0 0 0-.277-.853L7.713 4.59 6.448 2.029Z" fill="#DDDDE3"></path>
+                                                                                </g>
+                                                                                <defs>
+                                                                                    <clipPath id="a">
+                                                                                        <path fill="#fff" transform="translate(1 1.5)" d="M0 0h10v10H0z"></path>
+                                                                                    </clipPath>
+                                                                                </defs>
+                                                                            </svg>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="price-info">
+
+                                                                    @functions {
+                                                                        public decimal RoundToNearest(decimal value, int multiple)
+                                                                        {
+                                                                            return Math.Round(value / multiple) * multiple;
+                                                                        }
+                                                                    }
+
+                                                                    @{
+                                                                        var discountValue = @product.Price * @product.Discount / 100;
+                                                                        var finalPrice = @product.Price - discountValue;
+                                                                        if (finalPrice > 10000 && @product.Discount >= 1)
+                                                                            finalPrice = RoundToNearest(finalPrice, 1000);
+                                                                        else if (finalPrice > 100000 && @product.Discount >=1)
+                                                                            finalPrice = RoundToNearest(finalPrice, 10000);
+                                                                    }
+
+                                                                    <div class="price">
+                                                                        <div class="price-value" style="color: @(product.Discount == 0 ? "rgb(39, 39, 42)" : "rgb(255, 66, 78)");">
+                                                                            @finalPrice.ToString("N0")<sup>₫</sup>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div style="display: flex; gap: 4px; height: 18px;">
+                                                                        
+                                                                        <div class="price-discount__discount" style="@(product.Discount == 0 ? "visibility: hidden" : "visibility: visible");"> -@product.Discount%</div>
+                                                                        <div class="price-discount__original-price" style="@(product.Discount == 0 ? "visibility: hidden" : "visibility: visible");">  @product.Price.ToString("N0")  <sup>₫</sup></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                }
+                            </span>
+                        </div>
+                        <span class="Product icon-next" id="ProNextBtn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 18 18" fill="none">
+                                <path fill-rule="evenodd"
+                                      clip-rule="evenodd"
+                                      d="M5.91107 3.41107C6.23651 3.08563 6.76414 3.08563 7.08958 3.41107L12.0896 8.41107C12.415 8.73651 12.415 9.26415 12.0896 9.58958L7.08958 14.5896C6.76414 14.915 6.23651 14.915 5.91107 14.5896C5.58563 14.2641 5.58563 13.7365 5.91107 13.4111L10.3218 9.00033L5.91107 4.58958C5.58563 4.26414 5.58563 3.73651 5.91107 3.41107Z"
+                                      fill="#0A68FF">
+                                </path>
+                            </svg>
+                        </span>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    <script src="~/js/HomePage/Banner_Slide.js"></script>
+    <script src="~/js/HomePage/ProductSlide.js"></script>
+    <script>
+            window.addEventListener("load", function () {
+                const items = document.querySelectorAll(".Items");
+                items.forEach((item, index) => {
+                    setTimeout(() => {
+                        item.classList.add("show");
+                    }, index * 100); 
+                });
+            });
+
+            window.addEventListener("load", function () {
+                const items = document.querySelectorAll(".QuickLinksItems");
+                items.forEach((item, index) => {
+                    setTimeout(() => {
+                        item.classList.add("show");
+                    }, index * 100); // Điều chỉnh thời gian trễ giữa các mục
+                });
+            });
+
+            window.addEventListener("load", function () {
+                const items = document.querySelectorAll(".product-item-wrapper");
+                items.forEach((item, index) => {
+                    setTimeout(() => {
+                        item.classList.add("show");
+                    }, index * 100); // Điều chỉnh thời gian trễ giữa các mục
+                });
+            });
+    </script>
+</body>
+</html>

@@ -1,0 +1,583 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+.Container {
+    font-family: Inter,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.15;
+    text-size-adjust: 100%;
+    box-sizing: border-box;
+    width: 1270px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.AccountLayout {
+    display: flex;
+    width: 100%;
+    margin: 0px auto 20px;
+    flex-wrap: wrap;
+}
+
+.BreadcrumbWrapper {
+    font-family: Inter,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.15;
+    text-size-adjust: 100%;
+    box-sizing: border-box;
+    background-color: rgb(245, 245, 250);
+}
+
+    .BreadcrumbWrapper .breadcrumb {
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+    }
+
+    .BreadcrumbWrapper a.breadcrumb-item {
+        position: relative;
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+        height: 40px;
+        color: rgb(128, 128, 137);
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 300;
+        white-space: nowrap;
+    }
+
+    .BreadcrumbWrapper .icon.icon-next {
+        margin-left: 5.5px;
+        margin-right: 8.5px;
+    }
+
+    .BreadcrumbWrapper a.breadcrumb-item:last-child {
+        color: rgb(56, 56, 61);
+        cursor: default;
+        overflow: hidden;
+    }
+
+.StyledSideBar {
+    font-family: Inter,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.15;
+    text-size-adjust: 100%;
+    box-sizing: border-box;
+    width: 250px;
+    margin-right: 17px;
+}
+
+.StyledAvatar {
+    font-family: Inter,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.15;
+    text-size-adjust: 100%;
+    box-sizing: border-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding-left: 7px;
+    margin: 0px 0px 12px;
+}
+
+.StyledAvatar info {
+    -webkit-locale: "vi";
+    --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+    --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Free";
+    --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
+    -webkit-font-smoothing: antialiased;
+    font-family: Inter,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.15;
+    text-size-adjust: 100%;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+    .StyledAvatar img {
+        width: 45px;
+        margin: 0px 12px 0px 0px;
+        border-radius: 50%;
+    }
+
+    .StyledAvatar .info {
+        flex: 1 1 0%;
+        font-size: 13px;
+        line-height: 15px;
+        color: rgb(51, 51, 51);
+        font-weight: 300;
+    }
+
+    .StyledAvatar .info strong {
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 400;
+        display: block;
+        margin: 4px 0px 0px;
+    }
+
+    .StyledNav {
+        font-family: Inter,Helvetica,Arial,sans-serif;
+        line-height: 1.15;
+        text-size-adjust: 100%;
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        font-size: 13px;
+    }
+
+    .StyledNav a {
+        font-family: Inter,Helvetica,Arial,sans-serif;
+        line-height: 1.15;
+        text-size-adjust: 100%;
+        list-style: none;
+        font-size: 13px;
+        box-sizing: border-box;
+        text-decoration: none;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        padding: 7px 18px;
+/*        background-color: rgb(235, 235, 240);*/
+        color: rgb(0, 0, 0);
+    }
+
+    .StyledNav a:hover {
+        background-color: rgb(235, 235, 240);
+        color: rgb(0, 0, 0);
+    }
+
+    .StyledNav a svg, .StyledNav a .icon {
+        width: 24px;
+        height: 24px;
+        margin: 0px 22px 0px 0px;
+        font-size: 24px;
+        color: rgb(155, 155, 155);
+    }
+
+
+.StyledAccountLayoutInner {
+    font-family: Inter,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.15;
+    text-size-adjust: 100%;
+    box-sizing: border-box;
+    flex: 1 1 0%;
+    overflow: hidden;
+}
+
+.StyledHeading {
+    font-family: Inter,Helvetica,Arial,sans-serif;
+    text-size-adjust: 100%;
+    box-sizing: border-box;
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 300;
+    margin: 4px 0px 12px;
+}
+
+.StyleInfoPage {
+    font-family: Inter,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.15;
+    text-size-adjust: 100%;
+    box-sizing: border-box;
+}
+
+    .StyleInfoPage .info {
+        font-family: Inter,Helvetica,Arial,sans-serif;
+        font-size: 14px;
+        line-height: 1.15;
+        text-size-adjust: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: nowrap;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        background-color: rgb(255, 255, 255);
+        border-radius: 8px;
+    }
+
+    .StyleInfoPage .info-left {
+        font-family: Inter,Helvetica,Arial,sans-serif;
+        font-size: 14px;
+        line-height: 1.15;
+        text-size-adjust: 100%;
+        box-sizing: border-box;
+        width: 553px;
+        padding: 16px 24px 16px 16px;
+    }
+
+    .StyleInfoPage .info-title {
+        font-family: Inter,Helvetica,Arial,sans-serif;
+        text-size-adjust: 100%;
+        box-sizing: border-box;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        color: rgb(100, 100, 109);
+    }
+
+.StyledAccountInfo {
+    font-family: Inter,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.15;
+    text-size-adjust: 100%;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    margin-top: 16px;
+}
+
+    .StyledAccountInfo .form-info .form-avatar {
+        margin-right: 16px;
+    }
+
+.StyleAvatar {
+    font-family: Inter,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.15;
+    text-size-adjust: 100%;
+    box-sizing: border-box;
+    background-color: rgb(240, 248, 255);
+    border-radius: 50%;
+    width: 112px;
+    height: 112px;
+    border: 4px solid rgb(194, 225, 255);
+    position: relative;
+    -webkit-box-pack: center;
+    justify-content: center;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+    .StyleAvatar .avatar-view {
+        cursor: pointer;
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+    }
+
+        .StyleAvatar .avatar-view .default {
+            width: 50px;
+            height: 50px;
+        }
+
+        .StyleAvatar .avatar-view .edit {
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            background-color: rgb(100, 100, 109);
+            border-radius: 12px;
+            right: 3px;
+            bottom: 5px;
+            -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            justify-content: center;
+            display: flex;
+        }
+
+            .StyleAvatar .avatar-view .edit img {
+                width: 10px;
+                height: 10px;
+            }
+
+.StyledAccountInfo .form-info {
+    font-family: Inter,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.15;
+    text-size-adjust: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+}
+
+        .StyledAccountInfo .form-info .form-name {
+            width: 100%;
+            display: flex;
+            -webkit-box-pack: justify;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+
+    .StyledAccountInfo .form-control {
+        font-family: Inter,Helvetica,Arial,sans-serif;
+        font-size: 14px;
+        line-height: 1.15;
+        text-size-adjust: 100%;
+        box-sizing: border-box;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        margin: 0px 0px 34px;
+    }
+
+    .StyledAccountInfo .input-label {
+        font-family: Inter,Helvetica,Arial,sans-serif;
+        line-height: 1.15;
+        text-size-adjust: 100%;
+        box-sizing: border-box;
+        width: 110px;
+        min-width: 110px;
+        font-size: 14px;
+        color: rgb(51, 51, 51);
+        margin-right: 16px;
+    }
+
+.StyledInput {
+    font-family: Inter,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.15;
+    text-size-adjust: 100%;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+    .StyledInput input {
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+        height: 36px;
+        width: 100%;
+        border-radius: 4px;
+        padding: 10px 12px;
+        line-height: 20px;
+        outline: none;
+        flex: 1 1 0%;
+        border: 1px solid rgb(196, 196, 207);
+    }
+
+.StyledAccountInfo .form-control > div {
+    font-family: Inter,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.15;
+    text-size-adjust: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex: 1 1 0%;
+    position: relative;
+    z-index: 1;
+}
+
+.StyledBirthdayPicker {
+    font-family: Inter,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.15;
+    text-size-adjust: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex: 1 1 0%;
+    position: relative;
+    z-index: 1;
+}
+
+    .StyledBirthdayPicker select {
+        width: 100px;
+        border: 1px solid rgb(204, 204, 204);
+        height: 34px;
+        padding: 6px 12px;
+        line-height: 34px;
+        outline: none;
+        border-radius: 4px;
+        margin: 0px 12px 0px 0px;
+        background: 0px center;
+        box-shadow: none;
+    }
+
+.StyledRadio {
+    display: flex;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+    .StyledRadio .radio-fake {
+        width: 18px;
+        height: 18px;
+        border: 1px solid rgb(147, 150, 157);
+        border-radius: 50%;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0px 10px 0px 0px;
+        position: relative;
+        z-index: 1;
+        color: rgb(120, 120, 120);
+        flex-shrink: 0;
+    }
+
+    .StyledRadio input {
+        text-size-adjust: 100%;
+        font-family: inherit;
+        font-size: 100%;
+        line-height: 1.15;
+        margin: 0px;
+        overflow: visible;
+        box-sizing: border-box;
+        padding: 0px;
+        position: absolute;
+        height: 1px;
+        width: 1px;
+        visibility: hidden;
+        clip: rect(0px, 0px, 0px, 0px);
+        opacity: 0;
+    }
+
+    [type="checkbox"], [type="radio"] {
+        box-sizing: border-box;
+        padding: 0px;
+    }
+
+    .StyledRadio .label {
+        font-size: 13px;
+        line-height: 20px;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+    }
+
+    .StyledRadio .radio-fake::before {
+        content: "";
+        position: absolute;
+        left: 2px;
+        top: 2px;
+        width: 12px;
+        height: 12px;
+        background-color: rgb(13, 92, 182);
+        border-radius: 50%;
+        transform: scale(0);
+        transition: transform 0.3s;
+    }
+
+    .StyledRadio input[type="radio"]:checked + .radio-fake::before {
+        transform: scale(1);
+    }
+
+.StyledBtnSubmit {
+    text-size-adjust: 100%;
+    box-sizing: border-box;
+    font-family: inherit;
+    line-height: 1.15;
+    margin: 0px;
+    overflow: visible;
+    text-transform: none;
+    appearance: button;
+    border: 0px;
+    height: 40px;
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    background-color: rgb(11, 116, 229);
+    cursor: pointer;
+    width: 176px;
+}
+
+.info-vertical {
+    font-family: Inter,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.15;
+    text-size-adjust: 100%;
+    box-sizing: border-box;
+    border-left: 1px solid rgb(235, 235, 240);
+    margin: 16px 0px;
+}
+.info-right {
+    font-family: Inter,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.15;
+    text-size-adjust: 100%;
+    box-sizing: border-box;
+    width: calc(100% - 553px);
+    padding: 16px 16px 16px 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.StyledListItem {
+    font-family: Inter,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.15;
+    text-size-adjust: 100%;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+    .StyledListItem .list-item {
+        border-top: 1px solid rgb(248, 248, 248);
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        width: 100%;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        padding: 19px 0px;
+    }
+
+        .StyledListItem .list-item .status {
+            color: rgb(27, 168, 255);
+            flex: 1 1 0%;
+            -webkit-box-pack: justify;
+            justify-content: space-between;
+            display: flex;
+        }
+
+        .StyledListItem .list-item button.active {
+            border: 1px solid rgb(11, 116, 229);
+            background-color: rgb(255, 255, 255);
+        }
+
+        .StyledListItem .list-item button {
+            border: 0px;
+            height: 28px;
+            border-radius: 4px;
+            font-size: 14px;
+            cursor: pointer;
+            padding: 0px 12px;
+            color: rgb(11, 116, 229);
+        }
+
+        .StyledListItem .list-item .icon {
+            width: 24px;
+            height: 24px;
+            vertical-align: bottom;
+        }
+
+
+    .StyledListItem .detail {
+        display: flex;
+        flex-direction: column;
+    }
+
+        .StyledListItem .list-item span {
+            font-size: 14px;
+            line-height: 20px;
+            margin: 0px 0px 0px 6px;
+            color: rgb(56, 56, 61);
+        }
+
+.StyledInput .icon-right {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+}

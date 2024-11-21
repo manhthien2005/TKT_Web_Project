@@ -1,0 +1,561 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Tiki_Web_Project.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Tiki_Web_Project.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\css\\AccountPage.css",
+      "PackagePath": "staticwebassets\\css\\AccountPage.css"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\css\\Account\\Login.css",
+      "PackagePath": "staticwebassets\\css\\Account\\Login.css"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\css\\Account\\OTPForm.css",
+      "PackagePath": "staticwebassets\\css\\Account\\OTPForm.css"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\css\\Admin\\Dashboard\\Dashboard.css",
+      "PackagePath": "staticwebassets\\css\\Admin\\Dashboard\\Dashboard.css"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\css\\Admin\\Sidebar.css",
+      "PackagePath": "staticwebassets\\css\\Admin\\Sidebar.css"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\css\\Admin\\UserManagement\\UserManagement.css",
+      "PackagePath": "staticwebassets\\css\\Admin\\UserManagement\\UserManagement.css"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\css\\Admin\\UserManagement\\delete_user_noti.css",
+      "PackagePath": "staticwebassets\\css\\Admin\\UserManagement\\delete_user_noti.css"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\css\\Admin\\UserManagement\\edit_panel.css",
+      "PackagePath": "staticwebassets\\css\\Admin\\UserManagement\\edit_panel.css"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\css\\Admin\\UserManagement\\user_panel.css",
+      "PackagePath": "staticwebassets\\css\\Admin\\UserManagement\\user_panel.css"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\css\\Cart.css",
+      "PackagePath": "staticwebassets\\css\\Cart.css"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\css\\HomePage\\HomePage.css",
+      "PackagePath": "staticwebassets\\css\\HomePage\\HomePage.css"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\css\\HomePage\\ShowByCategory.css",
+      "PackagePath": "staticwebassets\\css\\HomePage\\ShowByCategory.css"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\css\\Product\\ProductPage.css",
+      "PackagePath": "staticwebassets\\css\\Product\\ProductPage.css"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\css\\UpdatePage.css",
+      "PackagePath": "staticwebassets\\css\\UpdatePage.css"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\css\\layout.css",
+      "PackagePath": "staticwebassets\\css\\layout.css"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\img\\AVT\\01\\TKT.png",
+      "PackagePath": "staticwebassets\\img\\AVT\\01\\TKT.png"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\img\\AVT\\10\\TKT-removebg-preview.png",
+      "PackagePath": "staticwebassets\\img\\AVT\\10\\TKT-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\img\\AVT\\11\\TKT.png",
+      "PackagePath": "staticwebassets\\img\\AVT\\11\\TKT.png"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\img\\AVT\\12\\TKT.png",
+      "PackagePath": "staticwebassets\\img\\AVT\\12\\TKT.png"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\img\\AVT\\5\\TKT.png",
+      "PackagePath": "staticwebassets\\img\\AVT\\5\\TKT.png"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\img\\AVT\\6\\TKT-removebg-preview.png",
+      "PackagePath": "staticwebassets\\img\\AVT\\6\\TKT-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\img\\AVT\\6\\TKT.png",
+      "PackagePath": "staticwebassets\\img\\AVT\\6\\TKT.png"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\img\\AVT\\7\\ad3bf027-e85b-4cad-ab5f-80a25e37f4cb.jpg",
+      "PackagePath": "staticwebassets\\img\\AVT\\7\\ad3bf027-e85b-4cad-ab5f-80a25e37f4cb.jpg"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\img\\AVT\\8\\TKT.png",
+      "PackagePath": "staticwebassets\\img\\AVT\\8\\TKT.png"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\img\\AVT\\9\\TKT-removebg-preview.png",
+      "PackagePath": "staticwebassets\\img\\AVT\\9\\TKT-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\img\\Banner.jpg",
+      "PackagePath": "staticwebassets\\img\\Banner.jpg"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\img\\Categories\\BHO.jpg",
+      "PackagePath": "staticwebassets\\img\\Categories\\BHO.jpg"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\img\\Categories\\DGD.jpg",
+      "PackagePath": "staticwebassets\\img\\Categories\\DGD.jpg"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\img\\Categories\\DT.jpg",
+      "PackagePath": "staticwebassets\\img\\Categories\\DT.jpg"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\img\\Categories\\MP.jpg",
+      "PackagePath": "staticwebassets\\img\\Categories\\MP.jpg"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\img\\Categories\\SubCategories\\1\\DT_CLASSIC.png",
+      "PackagePath": "staticwebassets\\img\\Categories\\SubCategories\\1\\DT_CLASSIC.png"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\img\\Categories\\SubCategories\\1\\DT_EBOOK.png",
+      "PackagePath": "staticwebassets\\img\\Categories\\SubCategories\\1\\DT_EBOOK.png"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\img\\Categories\\SubCategories\\1\\DT_SMARTPHONE.png",
+      "PackagePath": "staticwebassets\\img\\Categories\\SubCategories\\1\\DT_SMARTPHONE.png"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\img\\Categories\\SubCategories\\1\\DT_TABLET.png",
+      "PackagePath": "staticwebassets\\img\\Categories\\SubCategories\\1\\DT_TABLET.png"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\img\\Categories\\TPT.jpg",
+      "PackagePath": "staticwebassets\\img\\Categories\\TPT.jpg"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\img\\Categories\\TT.jpg",
+      "PackagePath": "staticwebassets\\img\\Categories\\TT.jpg"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\img\\ProductImage\\1\\1\\GLXA15LTE\\1.jpg",
+      "PackagePath": "staticwebassets\\img\\ProductImage\\1\\1\\GLXA15LTE\\1.jpg"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\img\\ProductImage\\1\\1\\GLXA15LTE\\2.jpg",
+      "PackagePath": "staticwebassets\\img\\ProductImage\\1\\1\\GLXA15LTE\\2.jpg"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\img\\ProductImage\\1\\1\\GLXA15LTE\\3.jpg",
+      "PackagePath": "staticwebassets\\img\\ProductImage\\1\\1\\GLXA15LTE\\3.jpg"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\img\\ProductImage\\1\\1\\GLXA15LTE\\4.jpg",
+      "PackagePath": "staticwebassets\\img\\ProductImage\\1\\1\\GLXA15LTE\\4.jpg"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\img\\ProductImage\\1\\1\\GLXA15LTE\\5.jpg",
+      "PackagePath": "staticwebassets\\img\\ProductImage\\1\\1\\GLXA15LTE\\5.jpg"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\img\\ProductImage\\1\\1\\GLXA15LTE\\6.jpg",
+      "PackagePath": "staticwebassets\\img\\ProductImage\\1\\1\\GLXA15LTE\\6.jpg"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\img\\ProductImage\\1\\1\\GLXA15LTE\\7.jpg",
+      "PackagePath": "staticwebassets\\img\\ProductImage\\1\\1\\GLXA15LTE\\7.jpg"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\img\\ProductImage\\1\\1\\GLXA15LTE\\8.jpg",
+      "PackagePath": "staticwebassets\\img\\ProductImage\\1\\1\\GLXA15LTE\\8.jpg"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\img\\ProductImage\\1\\1\\GLXA15LTE\\Thumbnail\\main.jpg",
+      "PackagePath": "staticwebassets\\img\\ProductImage\\1\\1\\GLXA15LTE\\Thumbnail\\main.jpg"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\img\\ProductImage\\4\\tra1\\1.jpg",
+      "PackagePath": "staticwebassets\\img\\ProductImage\\4\\tra1\\1.jpg"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\img\\ProductImage\\4\\tra1\\10.jpg",
+      "PackagePath": "staticwebassets\\img\\ProductImage\\4\\tra1\\10.jpg"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\img\\ProductImage\\4\\tra1\\2.jpg",
+      "PackagePath": "staticwebassets\\img\\ProductImage\\4\\tra1\\2.jpg"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\img\\ProductImage\\4\\tra1\\3.jpg",
+      "PackagePath": "staticwebassets\\img\\ProductImage\\4\\tra1\\3.jpg"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\img\\ProductImage\\4\\tra1\\4.jpg",
+      "PackagePath": "staticwebassets\\img\\ProductImage\\4\\tra1\\4.jpg"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\img\\ProductImage\\4\\tra1\\5.jpg",
+      "PackagePath": "staticwebassets\\img\\ProductImage\\4\\tra1\\5.jpg"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\img\\ProductImage\\4\\tra1\\6.jpg",
+      "PackagePath": "staticwebassets\\img\\ProductImage\\4\\tra1\\6.jpg"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\img\\ProductImage\\4\\tra1\\7.jpg",
+      "PackagePath": "staticwebassets\\img\\ProductImage\\4\\tra1\\7.jpg"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\img\\ProductImage\\4\\tra1\\8.jpg",
+      "PackagePath": "staticwebassets\\img\\ProductImage\\4\\tra1\\8.jpg"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\img\\ProductImage\\4\\tra1\\9.jpg",
+      "PackagePath": "staticwebassets\\img\\ProductImage\\4\\tra1\\9.jpg"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\img\\ProductImage\\4\\tra1\\main.jpg",
+      "PackagePath": "staticwebassets\\img\\ProductImage\\4\\tra1\\main.jpg"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\img\\TKT_Dashboard.png",
+      "PackagePath": "staticwebassets\\img\\TKT_Dashboard.png"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\img\\TKT_Logo.png",
+      "PackagePath": "staticwebassets\\img\\TKT_Logo.png"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\js\\Account\\Logout.js",
+      "PackagePath": "staticwebassets\\js\\Account\\Logout.js"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\js\\Account\\OTPscript.js",
+      "PackagePath": "staticwebassets\\js\\Account\\OTPscript.js"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\js\\Admin\\UserManagement\\Add_User.js",
+      "PackagePath": "staticwebassets\\js\\Admin\\UserManagement\\Add_User.js"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\js\\Admin\\UserManagement\\Delete_User.js",
+      "PackagePath": "staticwebassets\\js\\Admin\\UserManagement\\Delete_User.js"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\js\\Admin\\UserManagement\\Edit_User.js",
+      "PackagePath": "staticwebassets\\js\\Admin\\UserManagement\\Edit_User.js"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\js\\Admin\\UserManagement\\Filter_By.js",
+      "PackagePath": "staticwebassets\\js\\Admin\\UserManagement\\Filter_By.js"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\js\\Admin\\UserManagement\\Search_By_Category.js",
+      "PackagePath": "staticwebassets\\js\\Admin\\UserManagement\\Search_By_Category.js"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\js\\Admin\\UserManagement\\Select_Row.js",
+      "PackagePath": "staticwebassets\\js\\Admin\\UserManagement\\Select_Row.js"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\js\\Admin\\UserManagement\\Show_Add_User_Panel.js",
+      "PackagePath": "staticwebassets\\js\\Admin\\UserManagement\\Show_Add_User_Panel.js"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\js\\Admin\\UserManagement\\Show_User_Detail.js",
+      "PackagePath": "staticwebassets\\js\\Admin\\UserManagement\\Show_User_Detail.js"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\js\\Admin\\UserManagement\\Sort_By.js",
+      "PackagePath": "staticwebassets\\js\\Admin\\UserManagement\\Sort_By.js"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\js\\HomePage\\Banner_Slide.js",
+      "PackagePath": "staticwebassets\\js\\HomePage\\Banner_Slide.js"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\js\\HomePage\\ProductSlide.js",
+      "PackagePath": "staticwebassets\\js\\HomePage\\ProductSlide.js"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\js\\Layout\\SEO_KEY_SEARCH.js",
+      "PackagePath": "staticwebassets\\js\\Layout\\SEO_KEY_SEARCH.js"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\js\\ProductPage\\Quantity.js",
+      "PackagePath": "staticwebassets\\js\\ProductPage\\Quantity.js"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\js\\ProductPage\\main-view.js",
+      "PackagePath": "staticwebassets\\js\\ProductPage\\main-view.js"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\js\\ProductPage\\slider.js",
+      "PackagePath": "staticwebassets\\js\\ProductPage\\slider.js"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\js\\star_rating.js",
+      "PackagePath": "staticwebassets\\js\\star_rating.js"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\Tiki_Web_Project\\Tiki_Web_Project\\Tiki_Web_Project\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Tiki_Web_Project.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Tiki_Web_Project.props",
+      "PackagePath": "build\\Tiki_Web_Project.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Tiki_Web_Project.props",
+      "PackagePath": "buildMultiTargeting\\Tiki_Web_Project.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Tiki_Web_Project.props",
+      "PackagePath": "buildTransitive\\Tiki_Web_Project.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

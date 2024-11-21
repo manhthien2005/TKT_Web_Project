@@ -1,0 +1,162 @@
+﻿@model Tiki_Web_Project.Models.HomeViewModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/css/HomePage/ShowByCategory.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <main>
+        <div>
+            <div class="StyledContainer">
+                <div class="Breadcrumb__Wrapper">
+                    <div class="breadcrumb">
+                        <a class="breadcrumb-item" href="/">
+                            <span>Trang chủ</span>
+                        </a>
+                        <span class="icon icon-next">
+                            <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#808089" fill-rule="evenodd" clip-rule="evenodd" d="M0.646447 0.646447C0.841709 0.451184 1.15829 0.451184 1.35355 0.646447L6.35355 5.64645C6.54882 5.84171 6.54882 6.15829 6.35355 6.35355L1.35355 11.3536C1.15829 11.5488 0.841709 11.5488 0.646447 11.3536C0.451184 11.1583 0.451184 10.8417 0.646447 10.6464L5.29289 6L0.646447 1.35355C0.451184 1.15829 0.451184 0.841709 0.646447 0.646447Z"></path>
+                            </svg>
+                        </span>
+                        <a href="#" class="breadcrumb-item">
+                            <span title="NGON">NGON</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="ContentWrap">
+                    <div class="Left">
+                        <div class="TreeCategoriesContainer">
+                            <div class="TreeTitle">Khám phá theo danh mục</div>
+                            <div class="TreeWidgetContainer">
+                                <div class="TreeItemContainer">
+                                    @foreach (var subCategory in Model.SubCategories)
+                                    {
+                                        <a href="">
+                                            <div class="TreeItemStyled">
+                                                <div class="TreeName">@subCategory.SubName</div>
+                                            </div>
+                                        </a>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Right">
+                        <div class="StyledTitleSection">
+                            <h2>@Model.Categories[0].Name</h2>
+                        </div>
+                        <div class="SubCatesContainer">
+                            <div class="SubCatesTitle">Khám phá theo danh mục</div>
+                            <div class="SubCatesList">
+                                
+                                @foreach (var subCategory in Model.SubCategories)
+                                {
+                                    <a href="">
+                                        <div class="SubItem">
+                                            <div class="SubImage">
+                                                <img src="~/img/Categories/SubCategories/@subCategory.CategoryID/@subCategory.SubImg" width="88" height="88">
+                                            </div>
+                                            <div class="SubName">@subCategory.SubName</div>
+                                        </div>
+                                    </a>
+                                }
+                            </div>
+                        </div>
+
+                        <div class="SortAndFilterWrapper">
+                            <div class="Title">Tất cả sản phẩm</div>
+                            <div class="StyledLoadingContainer">
+                                <div class="StyledSortAndFilter">
+                                    <div class="FilterRow1">
+                                        <div class="FilterSlideWrapper">
+                                            <div class="FilterSlider" style="transform: translateX(0px);">
+                                                <div>
+                                                    <div class="SpecName">Thương hiệu</div>
+                                                    <div class="ChipList">
+                                                        <button class="BaseButton" style="margin-right: 8px;">
+                                                            <div class="ChipText">Deli</div>
+                                                        </button>
+                                                        <button class="BaseButton" style="margin-right: 8px;">
+                                                            <div class="ChipText">Thiên Long</div>
+                                                        </button>
+                                                        <button class="BaseButton" style="margin-right: 8px;">
+                                                            <div class="ChipText">Hồng Hà</div>
+                                                        </button>
+                                                        <button class="BaseButton" style="margin-right: 8px;">
+                                                            <div class="ChipText">Pentel</div>
+                                                        </button>
+                                                        <button class="BaseButton filter-dropdown" aria-describedby="popup-2">
+                                                            <img src="https://frontend.tikicdn.com/_desktop-next/static/img/catalog/arrow.svg" alt="arrow" class="arrow-icon">
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="Divider" style="margin-left: 16px; margin-right: 16px; align-self: flex-end;"></div>
+                                                <div>
+                                                    <div class="SpecName">Nhà cung cấp</div>
+                                                    <div class="ChipList">
+                                                        <button class="BaseButton" style="margin-right: 8px;">
+                                                            <div class="ChipText">Nhà Sách Vĩnh Thụy</div>
+                                                        </button>
+                                                        <button class="BaseButton" style="margin-right: 8px;">
+                                                            <div class="ChipText">Nhà sách Fahasa</div>
+                                                        </button>
+                                                        <button class="BaseButton" style="margin-right: 8px;">
+                                                            <div class="ChipText">Bamboo Books</div>
+                                                        </button>
+                                                        <button class="BaseButton" style="margin-right: 8px;">
+                                                            <div class="ChipText">info book</div>
+                                                        </button>
+                                                        <button class="BaseButton filter-dropdown" aria-describedby="popup-3">
+                                                            <img src="https://frontend.tikicdn.com/_desktop-next/static/img/catalog/arrow.svg" alt="arrow" class="arrow-icon">
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="Divider" style="margin-left: 16px; margin-right: 16px; align-self: flex-end;"></div>
+                                                <div>
+                                                    <div class="SpecName">Giao Hàng</div>
+                                                    <div class="ChipList">
+                                                        <button class="BaseButton" style="margin-right: 8px;">
+                                                            <div class="ChipText">Hàng nội địa</div>
+                                                        </button>
+                                                        <button class="BaseButton" style="margin-right: 8px;">
+                                                            <div class="ChipText">Hàng quốc tế</div>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div type="next" class="GradientContainer next" style="position: absolute; right: 0px; bottom: 0px; display: block;">
+                                                <div class="ArrowIconWrapper">
+                                                    <img src="https://frontend.tikicdn.com/_desktop-next/static/img/catalog/arrow.svg" alt="arrow" class="arrow-icon" style="transform: rotate(-90deg);">
+                                                </div>
+                                            </div>
+                                            <div type="back" class="GradientContainer back" style="position: absolute; left: 0px; bottom: 0px; display: none;">
+                                                <div class="arrow-icon-wrapper">
+                                                    <img src="https://frontend.tikicdn.com/_desktop-next/static/img/catalog/arrow.svg" alt="arrow" class="arrow-icon" style="transform: rotate(90deg);">
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div style="margin-left: auto; display: flex; flex-shrink: 0;">
+                                            <div class="Divider" style="margin-left: 16px; margin-right: 16px; align-self: flex-end;"></div>
+                                            <button class="StyledButton">
+                                                <img src="https://salt.tikicdn.com/ts/upload/3f/23/35/2d29fcaea0d10cbb85ce5b0d4cd20add.png" alt="filters" class="filter-icon">
+                                                <div>Tất cả</div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>

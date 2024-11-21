@@ -1,0 +1,417 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+html {
+    line-height: 1.15;
+    text-size-adjust: 100%;
+}
+
+html {
+    font-family: Inter, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    background-color: rgb(245, 245, 250);
+}
+
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.StyledContainer {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    min-width: 1280px;
+    max-width: 1440px;
+    padding: 0px 24px;
+}
+
+.Breadcrumb__Wrapper {
+    background-color: rgb(245, 245, 250);
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+    .Breadcrumb__Wrapper .breadcrumb {
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+    }
+
+    .Breadcrumb__Wrapper a.breadcrumb-item {
+        position: relative;
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+        color: rgb(128, 128, 137);
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: 400;
+        white-space: nowrap;
+        text-decoration: none;
+    }
+
+        .Breadcrumb__Wrapper a.breadcrumb-item:last-child {
+            color: rgb(39, 39, 42);
+            cursor: default;
+            overflow: hidden;
+        }
+
+    .Breadcrumb__Wrapper .icon.icon-next {
+        margin-left: 5.5px;
+        margin-right: 8.5px;
+    }
+
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+}
+
+
+.ContentWrap {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    column-gap: 24px;
+}
+
+.Left {
+    width: 240px;
+    flex-shrink: 0;
+    display: block;
+}
+
+.TreeCategoriesContainer {
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+    width: 240px;
+    margin-bottom: 16px;
+}
+
+.TreeTitle {
+    color: rgb(39, 39, 42);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 150%;
+    padding: 12px 16px;
+    border-bottom: 1px solid rgb(235, 235, 240);
+}
+
+.TreeWidgetContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.TreeItemContainer {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgb(235, 235, 240);
+    cursor: pointer;
+}
+
+.TreeItemStyled {
+    padding: 8px 16px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 24px;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.TreeName {
+    color: rgb(39, 39, 42);
+    text-overflow: ellipsis;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 150%;
+    padding: 4px 0px;
+}
+
+a {
+    color: rgb(11, 116, 229);
+    text-decoration: none;
+    background-color: transparent;
+}
+img {
+    border-style: none;
+    max-width: 100%;
+}
+
+
+.Right {
+    flex: 1 1 0%;
+    width: calc(100% - 264px);
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.StyledTitleSection {
+    padding: 16px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+}
+
+    .StyledTitleSection h2 {
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 150%;
+        margin: 0px;
+    }
+
+.SubCatesContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+    transition: 0.3s;
+}
+
+.SubCatesTitle {
+    color: rgb(39, 39, 42);
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.SubCatesList {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 16px 12px;
+}
+
+.SubItem {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.SubImage {
+    width: 88px;
+    height: 88px;
+}
+
+.SubName {
+    color: rgb(39, 39, 42);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 150%;
+    min-height: 42px;
+}
+
+.SubImage img {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    filter: brightness(1) invert(0.04);
+}
+
+
+.SortAndFilterWrapper {
+    background-color: white;
+    border-radius: 8px;
+}
+
+.Title {
+    color: rgb(39, 39, 42);
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+    padding: 16px 16px 0px;
+}
+
+.StyledLoadingContainer {
+    position: relative;
+    opacity: 1;
+}
+
+.StyledSortAndFilter {
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    padding: 0px 16px;
+}
+
+.FilterRow1 {
+    display: flex;
+    padding: 12px 0px;
+    border-bottom: 1px solid rgb(235, 235, 240);
+}
+
+.FilterSlideWrapper {
+    display: flex;
+    overflow: hidden;
+    flex: 1 1 0%;
+    position: relative;
+}
+
+.FilterSlider {
+    display: flex;
+    transition: 0.3s;
+}
+
+    .FilterSlider > * {
+        flex-shrink: 0;
+    }
+
+.SpecName {
+    color: rgb(128, 128, 137);
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 4px;
+}
+
+.ChipList {
+    display: flex;
+}
+
+
+.BaseButton {
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    padding: 6px 12px;
+    border-radius: 16px;
+    border: 1px solid rgb(221, 221, 227);
+    background-color: white;
+
+
+    display: block;
+    margin: 0px;
+    outline: none;
+    background: none;
+    color: rgb(39, 39, 42);
+    cursor: pointer;
+}
+
+    .BaseButton:hover {
+        background-color: #e5e5e5;
+    }
+
+    .BaseButton .filter-dropdown {
+        width: 34px;
+        height: 34px;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        border-radius: 16px;
+        border: 1px solid rgb(221, 221, 227);
+        margin-left: 8px;
+        position: relative;
+    }
+
+.ChipText {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+
+button, [type="button"], [type="reset"], [type="submit"] {
+    appearance: button;
+}
+
+button, select {
+    text-transform: none;
+}
+
+button, input {
+    overflow: visible;
+}
+
+button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0px;
+}
+
+.Divider {
+    width: 1px;
+    height: 34px;
+    background-color: rgb(235, 235, 240);
+}
+
+    .Divider > * {
+        flex-shrink: 0;
+    }
+
+.next {
+    width: 56px;
+    height: 34px;
+    padding: 0px 8px 0px 16px;
+    cursor: pointer;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 50.18%);
+}
+
+.back {
+    width: 56px;
+    height: 34px;
+    padding: 0px 8px 0px 16px;
+    cursor: pointer;
+    background: linear-gradient(90deg, rgb(255, 255, 255) 50.18%, rgba(255, 255, 255, 0) 100%);
+}
+
+.ArrowIconWrapper {
+    width: 34px;
+    height: 34px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.arrow-icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+img {
+    border-style: none;
+}
+
+.StyledButton {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    background: none;
+    font-size: 14px;
+    line-height: 21px;
+    color: rgb(39, 39, 42);
+    padding: 6px 12px;
+    align-self: flex-end;
+    border: 1px solid rgb(221, 221, 227);
+    border-radius: 4px;
+    gap: 8px;
+}

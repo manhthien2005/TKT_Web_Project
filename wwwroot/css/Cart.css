@@ -1,0 +1,107 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+
+html {
+    box-sizing: border-box;
+    font-family: Inter,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    background: #f4f4f4;
+    line-height: 1.15;
+    text-size-adjust: 100%;
+    background-color: rgb(245, 245, 250);
+    scroll-behavior: smooth;
+}
+
+.StyledMainComponent {
+    min-height: calc(-100px + 100vh);
+    width: 100%;
+    min-width: 1280px;
+    max-width: 1440px;
+    padding: 24px 24px 8px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.main-title {
+    margin: 0px 0px 12px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+    width: calc(100% - 340px);
+}
+
+.main-title h4 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0px;
+    color: rgb(0, 0, 0);
+    line-height: 28px;
+    text-transform: uppercase;
+    flex: 1 1 0%;
+}
+.content {
+    display: flex;
+    flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    flex-basis: 100%;
+}
+.Left {
+    flex: 1 1 0%;
+    width: calc(100% - 380px);
+    margin-right: 20px;
+}
+
+.StyledEmptyCart {
+    width: calc(100% - 48px);
+    overflow-x: hidden;
+    row-gap: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.empty {
+    background: rgb(255, 255, 255);
+    border-radius: 8px;
+    width: 100%;
+    padding: 16px 0px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+img {
+    max-width: 100%;
+    border-style: none;
+}
+
+
+.empty__message1 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+    color: rgb(39, 39, 42);
+    margin: 12px 0px 2px;
+}
+
+.empty__message2 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    color: rgb(39, 39, 42);
+    margin: 0px;
+}

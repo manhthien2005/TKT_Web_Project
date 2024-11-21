@@ -1,0 +1,150 @@
+﻿/* Overlay */
+.user-panel-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Màu nền mờ */
+    z-index: 999; /* Overlay nằm phía dưới panel */
+    backdrop-filter: blur(10px); /* Làm mờ nền phía sau */
+}
+
+.user-edit-panel-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Màu nền mờ */
+    z-index: 999; /* Overlay nằm phía dưới panel */
+    backdrop-filter: blur(10px); /* Làm mờ nền phía sau */
+}
+
+.required {
+    color: red;
+    font-weight: bold;
+}
+
+/* Toàn bộ panel */
+.user-panel {
+    display: none; /* Được hiển thị khi mở */
+    position: fixed;
+    top: 50%; /* Căn panel theo chiều dọc */
+    left: 50%; /* Căn panel theo chiều ngang */
+    transform: translate(-50%, -50%); /* Dịch chuyển panel về chính giữa */
+    width: 60%; /* Chiếm 60% chiều rộng màn hình */
+    max-width: 800px; /* Tối đa chiều rộng */
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Nội dung panel */
+.panel-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+/* Nút đóng panel */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Tiêu đề */
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Bố cục form */
+#user-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Chia form thành 2 cột */
+    gap: 20px;
+}
+
+/* Các nhóm input */
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+    .input-group label {
+        font-size: 14px;
+        margin-bottom: 5px;
+        color: #333;
+    }
+
+    /* Input fields */
+    .input-group input,
+    .input-group select {
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        color: #333;
+        transition: border-color 0.3s ease;
+    }
+
+        /* Thay đổi khi focus vào input */
+        .input-group input:focus,
+        .input-group select:focus {
+            border-color: #4CAF50;
+            outline: none;
+        }
+
+    /* Đảm bảo chiều rộng cho tất cả các input */
+    .input-group input,
+    .input-group select {
+        width: 100%;
+    }
+
+
+/* Điều chỉnh style cho input file */
+#user-avatar {
+    padding: 5px;
+    margin-top: 5px;
+}
+
+/* Button Save chiếm trọn 2 cột */
+#user-form button {
+    grid-column: span 2; /* Làm cho nút chiếm toàn bộ 2 cột */
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%; /* Chiếm trọn chiều rộng */
+}
+
+    /* Hiệu ứng khi hover vào button */
+    #user-form button:hover {
+        background-color: #45a049;
+    }
+
+/* Đảm bảo form không bị tràn ra ngoài khi có nhiều trường nhập */
+@media (max-width: 768px) {
+    .user-panel {
+        width: 80%; /* Mở rộng panel trên các màn hình nhỏ hơn */
+        padding: 20px;
+    }
+
+    #user-form {
+        grid-template-columns: 1fr; /* Chuyển thành 1 cột trên các màn hình nhỏ */
+    }
+}

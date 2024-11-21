@@ -1,0 +1,32 @@
+﻿@model Tiki_Web_Project.Models.User
+
+<form asp-action="Register" method="post">
+    <div>
+        <label>Username</label>
+        <input asp-for="Username" required />
+    </div>
+    <div>
+        <label>Name</label>
+        <input asp-for="Name" required />
+    </div>
+    <div>
+        <label>Password</label>
+        <input asp-for="Password" type="password" required />
+    </div>
+    <div>
+        <label>Email</label>
+        <input asp-for="Email" required />
+    </div>
+    <div>
+        <label>Phone</label>
+        <input asp-for="Phone" required />
+    </div>
+    <div>
+        <label>Birthday</label>
+        <input asp-for="Birthday" required />
+    </div>
+    <button type="submit">Register</button>
+</form>
+
+<!-- Link to Login page -->
+<p>Already have an account? <a asp-action="Login">Login here</a>.</p>

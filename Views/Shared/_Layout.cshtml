@@ -1,0 +1,182 @@
+﻿@model Tiki_Web_Project.Models.HomeViewModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]TeeMee - Mua Sắm Online</title>
+    <link rel="stylesheet" href="~/css/layout.css" />
+    <!-- Thêm link CSS hoặc script khác tại đây -->
+</head>
+<body>
+    <header id="main-header" class="header">
+        <div class="header-container">
+            <div class="TopHeader">
+                <div class="header-logo">
+                    <a href="@Url.Action("HomePage", "Home")" data-view-id="header_main_logo" class="tkt-logo">
+                        <img src="~/img/TKT_Logo.png" alt="tkt-logo" width="110" height="50">
+                        <span style="text-align: center">Hàng Chất - Giá Hời</span>
+                    </a>
+                </div>
+                <div class="Function">
+                    <div class="FunctionItems">
+                        <div class="FunctionLeft">
+                            <div class="Search">
+                                <div class="SearchStyles">
+                                    <img class="icon-search" src="https://salt.tikicdn.com/ts/upload/33/d0/37/6fef2e788f00a16dc7d5a1dfc5d0e97a.png" alt="icon-search" width="20" height="20">
+                                    <input type="text" data-view-id="main_search_form_input" value="" placeholder="Giao nhanh 2h" class="search_input">
+                                    <button data-view-id="main_search_form_button" class="search_button"> Tìm kiếm</button>
+                                </div>
+                            </div> 
+                        </div>
+                        <div data-view-id="header_user_shortcut" class="UserStyle">
+                            <a class="Home" href="@Url.Action("HomePage", "Home")" rel="nofollow" style="display: flex; align-items: center; text-decoration: none;">
+                                <img src="https://salt.tikicdn.com/ts/upload/32/56/db/d919a4fea46f498b5f4708986d82009d.png" alt="header_menu_item_home" width="24" height="24" style="margin-right: 4px">
+                                Trang Chủ
+                            </a>
+                            <div data-view-id="header_header_account_container" class="Account">
+                                <img src="https://salt.tikicdn.com/ts/upload/07/d5/94/d7b6a3bd7d57d37ef6e437aa0de4821b.png" alt="header_header_account_img" width="24" height="24" style="margin-right: 4px">
+                                <span>Tài Khoản</span>
+
+                                @if (User.Identity.IsAuthenticated)
+                                {
+                                    <div class="UserDropDownRevamp">
+                                        <a rel="nofollow" href="@Url.Action("Index", "Account")">
+                                            <p title="Thông tin tài khoản" class="UserDropDownItemRevamp">Thông tin tài khoản</p>
+                                        </a>
+                                        <a rel="nofollow" href="/sales/order/history?src=header_my_account">
+                                            <p title="Đơn hàng của tôi" class="UserDropDownItemRevamp">Đơn hàng của tôi</p>
+                                        </a>
+                                        <a href="javascript:void(0)" onclick="logoutUser()">
+                                            <p title="Đăng xuất" class="UserDropDownItemRevamp">Đăng xuất</p>
+                                        </a>
+                                    </div>
+                                }
+                                else
+                                {
+                                    <div class="UserDropDownRevamp">
+                                        <a rel="nofollow" href="@Url.Action("Login", "Account")">
+                                            <p title="Đăng Nhập" class="UserDropDownItemRevamp">Đăng Nhập</p>
+                                        </a>
+                                        <a rel="nofollow" href="@Url.Action("Register", "Account")">
+                                            <p title="Đăng Ký" class="UserDropDownItemRevamp">Đăng Ký</p>
+                                        </a>
+                                    </div>
+                                }
+
+
+                            </div>
+
+
+                            <div class="Cart">
+                                <a data-view-id="header_user_shortcut_cart" href="@((User.Identity.IsAuthenticated) ?  Url.Action("Index", "Cart") :  Url.Action("Login", "Account"))" rel="nofollow">
+                                    <div class="CartItems">
+                                        <div class="cart-wrapper">
+                                            <img class="cart-icon" src="https://salt.tikicdn.com/ts/upload/51/e2/92/8ca7e2cc5ede8c09e34d1beb50267f4f.png" alt="header_header_img_Cart" width="24" height="24">
+                                            <span class="CartQty">0</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="BottomHeader">
+                        <div data-view-id="header_quicklinks_container" class="QuickLinks">
+                            <a data-view-id="header_quicklinks_item" data-view-index="0" href="/dien-gia-dung/c1882?from=header_keyword">điện gia dụng</a>
+                            <a data-view-id="header_quicklinks_item" data-view-index="1" href="/o-to-xe-may-xe-dap/c8594?from=header_keyword">xe cộ</a>
+                            <a data-view-id="header_quicklinks_item" data-view-index="2" href="/do-choi-me-be/c2549?from=header_keyword">mẹ &amp; bé</a>
+                            <a data-view-id="header_quicklinks_item" data-view-index="3" href="/lam-dep-suc-khoe/c1520?from=header_keyword">khỏe đẹp</a>
+                            <a data-view-id="header_quicklinks_item" data-view-index="4" href="/nha-cua-doi-song/c1883?from=header_keyword">nhà cửa</a>
+                            <a data-view-id="header_quicklinks_item" data-view-index="5" href="/nha-sach-tiki/c8322?from=header_keyword">sách</a>
+                            <a data-view-id="header_quicklinks_item" data-view-index="6" href="/the-thao-da-ngoai/c1975?from=header_keyword">thể thao</a>
+                        </div>
+                        <div class="LocationWrapper">
+                            <div class="Delivering_Location">
+                                <img src="https://salt.tikicdn.com/ts/upload/88/5c/9d/f5ee506836792eb7775e527ef8350a44.png" alt="header-icon-location" width="24" height="24" style="margin-right: 4px">
+                                <h4 class="title" style="margin-right: 4px">Giao đến: </h4>
+                                <div class="address">Q. 1, P. Bến Nghé, Hồ Chí Minh</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div style="background-color:white" class="Infor">
+        <a href="https://tiki.vn/thong-tin/tiki-doi-tra-de-dang-an-tam-mua-sam" class="InforContainer">
+            <div style="color:#003EA1" class="Infor1">Cam kết</div>
+            <div style="display:flex;gap:12px;align-items:center">
+                <div style="display:flex;gap:4px;padding-inline:6px;align-items:center">
+                    <picture class="webpimg-container">
+                        <source type="image/webp" srcset="https://salt.tikicdn.com/ts/upload/96/76/a3/16324a16c76ee4f507d5777608dab831.png">
+                        <img class="WebpImg__StyledImg-sc-h3ozu8-0 fWjUGo title-img-0" src="https://salt.tikicdn.com/ts/upload/96/76/a3/16324a16c76ee4f507d5777608dab831.png" alt="icon-0" width="20" height="20" srcset="https://salt.tikicdn.com/ts/upload/96/76/a3/16324a16c76ee4f507d5777608dab831.png">
+                    </picture>
+                    <div style="color:#27272A;font-size:12px;font-weight:500;white-space:nowrap">100% hàng thật</div>
+                </div>
+                <div style="width:1px;height:20px;background:#EBEBF0"></div>
+                <div style="display:flex;gap:4px;padding-inline:6px;align-items:center">
+                    <picture class="webpimg-container">
+                        <source type="image/webp" srcset="https://salt.tikicdn.com/ts/upload/11/09/ec/456a2a8c308c2de089a34bbfef1c757b.png">
+                        <img class="WebpImg__StyledImg-sc-h3ozu8-0 fWjUGo title-img-1" src="https://salt.tikicdn.com/ts/upload/11/09/ec/456a2a8c308c2de089a34bbfef1c757b.png" alt="icon-1" width="20" height="20" srcset="https://salt.tikicdn.com/ts/upload/11/09/ec/456a2a8c308c2de089a34bbfef1c757b.png">
+                    </picture>
+                    <div style="color:#27272A;font-size:12px;font-weight:500;white-space:nowrap">Freeship mọi đơn</div>
+                </div>
+                <div style="width:1px;height:20px;background:#EBEBF0"></div>
+                <div style="display:flex;gap:4px;padding-inline:6px;align-items:center">
+                    <picture class="webpimg-container">
+                        <source type="image/webp" srcset="https://salt.tikicdn.com/ts/upload/0b/f2/19/c03ae8f46956eca66845fb9aaadeca1e.png">
+                        <img class="WebpImg__StyledImg-sc-h3ozu8-0 fWjUGo title-img-2" src="https://salt.tikicdn.com/ts/upload/0b/f2/19/c03ae8f46956eca66845fb9aaadeca1e.png" alt="icon-2" width="20" height="20" srcset="https://salt.tikicdn.com/ts/upload/0b/f2/19/c03ae8f46956eca66845fb9aaadeca1e.png">
+                    </picture>
+                    <div style="color:#27272A;font-size:12px;font-weight:500;white-space:nowrap">Hoàn 200% nếu hàng giả</div>
+                </div>
+                <div style="width:1px;height:20px;background:#EBEBF0"></div>
+                <div style="display:flex;gap:4px;padding-inline:6px;align-items:center">
+                    <picture>
+                        <source type="image/webp" srcset="https://salt.tikicdn.com/ts/upload/3a/f4/7d/86ca29927e9b360dcec43dccb85d2061.png">
+                        <img src="https://salt.tikicdn.com/ts/upload/3a/f4/7d/86ca29927e9b360dcec43dccb85d2061.png" alt="icon-3" width="20" height="20" srcset="https://salt.tikicdn.com/ts/upload/3a/f4/7d/86ca29927e9b360dcec43dccb85d2061.png">
+                    </picture>
+                    <div style="color:#27272A;font-size:12px;font-weight:500;white-space:nowrap">30 ngày đổi trả</div>
+                </div>
+                <div style="width:1px;height:20px;background:#EBEBF0"></div>
+                <div style="display:flex;gap:4px;padding-inline:6px;align-items:center">
+                    <picture>
+                        <source type="image/webp" srcset="https://salt.tikicdn.com/ts/upload/87/98/77/fc33e3d472fc4ce4bae8c835784b707a.png">
+                        <img src="https://salt.tikicdn.com/ts/upload/87/98/77/fc33e3d472fc4ce4bae8c835784b707a.png" alt="icon-4" width="20" height="20" srcset="https://salt.tikicdn.com/ts/upload/87/98/77/fc33e3d472fc4ce4bae8c835784b707a.png">
+                    </picture>
+                    <div style="color:#27272A;font-size:12px;font-weight:500;white-space:nowrap">Giao nhanh 2h</div>
+                </div>
+                <div style="width:1px;height:20px;background:#EBEBF0"></div>
+                <div style="display:flex;gap:4px;padding-inline:6px;align-items:center">
+                    <picture>
+                        <source type="image/webp" srcset="https://salt.tikicdn.com/ts/upload/6a/81/06/0675ef5512c275a594d5ec1d58c37861.png">
+                        <img src="https://salt.tikicdn.com/ts/upload/6a/81/06/0675ef5512c275a594d5ec1d58c37861.png" alt="icon-5" width="20" height="20" srcset="https://salt.tikicdn.com/ts/upload/6a/81/06/0675ef5512c275a594d5ec1d58c37861.png">
+                    </picture>
+                    <div style="color:#27272A;font-size:12px;font-weight:500;white-space:nowrap">Giá siêu rẻ</div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <main>
+        @RenderBody()
+    </main>
+
+    @{
+        var logoutUrl = Url.Action("Logout", "Account"); // Tạo URL cho action Logout
+        var loginUrl = Url.Action("Login", "Account"); // Tạo URL cho action Login
+    }
+
+
+    <script src="~/js/Account/Logout.js"></script>
+    <script src="~/js/Layout/SEO_KEY_SEARCH.js"></script>
+
+    <script>
+        // Truyền URL logout và login vào biến JavaScript
+        let logoutUrl = '@logoutUrl';
+        let loginUrl = '@loginUrl';
+
+        
+
+    </script>
+</body>
+</html>

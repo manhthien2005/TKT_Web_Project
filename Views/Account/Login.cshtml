@@ -1,0 +1,88 @@
+﻿@{
+    Layout = null;
+}
+
+@model LoginViewModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazada Seller Login</title>
+    <link rel="stylesheet" href="~/css/Account/Login.css" />
+</head>
+
+<body>
+    <div id="root">
+        <div class="login-container" id="J_page">
+            <div class="header">
+                <div class="header-content">
+                    <!-- Logo Section -->
+                    <div class="header-logo">
+                        <img src="//img.alicdn.com/imgextra/i1/O1CN01S6OQyg23Dj7ZuZrgK_!!6000000007222-55-tps-446-113.svg" alt="Lazada Seller" class="logo" width="220" height="56">
+                    </div>
+
+                    <!-- Navigation & Actions Section -->
+                    <div class="header-actions" style="padding: 20px">
+                        <!-- Country Switcher -->
+                        <div class="country-switcher">
+                            <button class="button country-button">
+                                <div class="country-wrapper">
+                                    <img src="//lzd-img-global.slatic.net/us/media/75ae9e4570ee22bdf6270bd87c8d193a-512-512.svg" width="23" height="23" alt="Country Flag" class="country-flag">
+                                    <span class="country-label">Việt Nam</span>
+                                </div>
+                                <i class="icon-arrow"></i>
+                            </button>
+                        </div>
+
+                        <!-- Language Switcher -->
+                        <div class="language-switcher">
+                            <button class="button language-button">
+                                <span>Tiếng Việt</span>
+                                <i class="icon-arrow" style="margin: 0px 20px"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Login Section -->
+        <div class="background"
+                style="background-image: url('https://img.lazcdn.com/g/tps/imgextra/i4/O1CN016UzALb1mBa3cNMrwz_!!6000000004916-0-tps-2400-1215.jpg_2200x2200q75.jpg_.webp');">
+        </div>
+
+        <div class="login-box" style="margin: 100px 900px 0px">
+            <div class="form-container">
+                <div class="form-header" style="margin: 0px 0px 32px;">
+                    <p>Đăng Nhập</p>
+                </div>
+                <form asp-action="Login" class="login-form" method="post">
+                    <div class="form-item">
+                        <input asp-for="Username" id="username" placeholder="Username" type="text" class="input-field" />
+                        <span asp-validation-for="Username" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-item">
+                        <input asp-for="Password" id="password" placeholder="Mật khẩu" type="password" class="input-field" />
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+
+                    <div>
+                        <button type="submit" class="submit-button" style="margin-top: 32px;">
+                            <span>Đăng nhập</span>
+                        </button>
+                    </div>
+                </form>
+                <div class="footer-links">
+                    <span class="forgot-password" onclick="window.location.href='@Url.Action("ForgotPass", "Account")'">Quên mật khẩu</span><br>
+                    <span class="register-link" onclick="window.location.href='@Url.Action("Register", "Account")'">Đăng ký</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,221 @@
+﻿@model Tiki_Web_Project.Models.HomeViewModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/css/AccountPage.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Thêm link CSS hoặc script khác tại đây -->
+</head>
+
+<main>
+    <div class="Container">
+        <div class="AccountLayout">
+            <div data-view-id="breadcrumb_container" class="BreadcrumbWrapper">
+                <div class="Container">
+                    <div class="breadcrumb">
+                        <a class="breadcrumb-item" data-view-id="breadcrumb_item" data-view-index="0" href="/">
+                            <span>Trang chủ</span>
+                        </a>
+                        <span class="icon icon-next">
+                            <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#808089" fill-rule="evenodd" clip-rule="evenodd" d="M0.646447 0.646447C0.841709 0.451184 1.15829 0.451184 1.35355 0.646447L6.35355 5.64645C6.54882 5.84171 6.54882 6.15829 6.35355 6.35355L1.35355 11.3536C1.15829 11.5488 0.841709 11.5488 0.646447 11.3536C0.451184 11.1583 0.451184 10.8417 0.646447 10.6464L5.29289 6L0.646447 1.35355C0.451184 1.15829 0.451184 0.841709 0.646447 0.646447Z"></path>
+                            </svg>
+                        </span>
+                        <a href="#" class="breadcrumb-item" data-view-id="breadcrumb_item" data-view-index="1">
+                            <span title="Thông tin tài khoản">Thông tin tài khoản</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <aside class="StyledSideBar">
+                <div class="StyledAvatar">
+                    <img src="https://salt.tikicdn.com/desktop/img/avatar.png" alt="avatar">
+                    <div class="info">Tài khoản của
+                        <strong>@Model.Users[0].Name</strong></div>
+                </div>
+                <ul class="StyledNav">
+                    <li>
+                        <a class="is-active" href="@Url.Action("Index", "Account")">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path>
+                            </svg>
+                            <span>Thông tin tài khoản</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/customer/paymentcard">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"></path>
+                            </svg>
+                            <span>Thông tin thanh toán</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/sales/order/history">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13 12h7v1.5h-7zm0-2.5h7V11h-7zm0 5h7V16h-7zM21 4H3c-1.1 0-2 .9-2 2v13c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 15h-9V6h9v13z"></path>
+                            </svg>
+                            <span>Quản lý đơn hàng</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/customer/address">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path>
+                            </svg>
+                            <span>Sổ địa chỉ</span>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+
+            <div class="StyledAccountLayoutInner">
+                <div class="StyledHeading">Thông tin tài khoản</div>
+                <div class="StyleInfoPage">
+                    <div class="info">
+                        <div class="info-left">
+                            <span class="info-title">Thông tin cá nhân</span>
+                            <div class="StyledAccountInfo">
+                                <form asp-action="UpdateAccountInfo" method="post">
+                                    <div class="form-info">
+                                        <div class="form-avatar">
+                                            <div class="StyleAvatar">
+                                                <div>
+                                                    <div class="avatar-view">
+                                                        <img src="https://frontend.tikicdn.com/_desktop-next/static/img/account/avatar.png" alt="avatar" class="default">
+                                                        <div class="edit">
+                                                            <img src="https://frontend.tikicdn.com/_desktop-next/static/img/account/edit.png" class="edit_img" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-name">
+                                            <div class="form-control">
+                                                <label class="input-label">Họ & Tên</label>
+                                                <div>
+                                                    <div class="StyledInput">
+                                                        <input class="input" type="text" name="Name" maxlength="128" placeholder="Thêm họ tên" value="@Model.Users[0].Name">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-control">
+                                                <label class="input-label">Nickname</label>
+                                                <div>
+                                                    <div class="StyledInput">
+                                                        <input class="input" name="Username" maxlength="128" placeholder="Thêm nickname" type="text" value="@Model.Users[0].Username">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-control">
+                                        <label class="input-label">Ngày sinh</label>
+                                        <div class="StyledBirthdayPicker">
+                                            <input class="input" type="date" name="Birthday" value="@Model.Users[0].Birthday?.ToString("yyyy-MM-dd")">
+                                        </div>
+                                    </div>
+                                    <div class="form-control">
+                                        <label class="input-label">Giới tính</label>
+                                        <label class="StyledRadio">
+                                            <input type="radio" name="Gender" value="male" @(Model.Users[0].Gender == "male" ? "checked" : "")>
+                                            <span class="radio-fake"></span><span class="label">Nam</span>
+                                        </label>
+                                        <label class="StyledRadio">
+                                            <input type="radio" name="Gender" value="female" @(Model.Users[0].Gender == "female" ? "checked" : "")>
+                                            <span class="radio-fake"></span><span class="label">Nữ</span>
+                                        </label>
+                                        <label class="StyledRadio">
+                                            <input type="radio" name="Gender" value="other" @(Model.Users[0].Gender == "other" ? "checked" : "")>
+                                            <span class="radio-fake"></span><span class="label">Khác</span>
+                                        </label>
+                                    </div>
+                                    <div class="form-control">
+                                        <label class="input-label">Quốc tịch</label>
+                                        <div>
+                                            <div class="StyledInput">
+                                                <select class="input with-icon-right" asp-for="Users[0].Nationality" class="form-control">
+                                                    <option value="VN" selected="@Model.Users[0].Nationality == " VN"">Việt Nam</option>
+                                                    <option value="US" selected="@Model.Users[0].Nationality == " US"">Mỹ</option>
+                                                    <option value="JP" selected="@Model.Users[0].Nationality == " JP"">Nhật Bản</option>
+                                                    <option value="KR" selected="@Model.Users[0].Nationality == " KR"">Hàn Quốc</option>
+                                                    <option value="CN" selected="@Model.Users[0].Nationality == " CN"">Trung Quốc</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-control">
+                                        <label class="input-label">&nbsp;</label>
+                                        <button type="submit" class="StyledBtnSubmit">Lưu thay đổi</button>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                        <div class="info-vertical"></div>
+                        <div class="info-right">
+                            <span class="info-title">Số điện thoại và Email</span>
+                            <div class="StyledListItem">
+                                <div class="list-item">
+                                    <div class="info">
+                                        <img src="https://frontend.tikicdn.com/_desktop-next/static/img/account/phone.png" class="icon" alt="">
+                                        <div class="detail">
+                                            <span>Số điện thoại</span>
+                                            <span>@Model.Users[0].Phone</span>
+                                        </div>
+                                    </div>
+                                    <div class="status">
+                                        <span></span>
+                                        <button class="button active" onclick="updatePhone()">Cập nhật</button>
+                                    </div>
+                                </div>
+                                <div class="list-item">
+                                    <div class="info">
+                                        <img src="https://frontend.tikicdn.com/_desktop-next/static/img/account/email.png" class="icon" alt="">
+                                        <div class="detail">
+                                            <span>Địa chỉ email</span>
+                                            <span class="span hint">@Model.Users[0].Email</span>
+                                        </div>
+                                    </div>
+                                    <div class="status">
+                                        <span></span>
+                                        <button class="button active" onclick="updateEmail()">Cập nhật</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="info-title">Bảo mật</span>
+                            <div class="StyledListItem">
+                                <div class="list-item">
+                                    <div><img src="https://frontend.tikicdn.com/_desktop-next/static/img/account/lock.png" class="icon" alt=""><span>Đổi mật khẩu</span></div>
+                                    <div class="status"><span></span><button class="button active">Cập nhật</button></div>
+                                </div>
+                                <div class="list-item">
+                                    <div><img src="https://salt.tikicdn.com/ts/upload/99/50/d7/cc0504daa05199e1fb99cd9a89e60fa5.jpg" class="icon" alt=""><span>Thiết lập mã PIN</span></div>
+                                    <div class="status"><span></span><button class="button active">Thiết lập</button></div>
+                                </div>
+                                <div class="list-item">
+                                    <div><img src="https://frontend.tikicdn.com/_desktop-next/static/img/icons/trash.svg" class="icon" alt=""><span>Yêu cầu xóa tài khoản</span></div>
+                                    <div class="status"><span></span><button class="button active">Yêu cầu</button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        function updatePhone() {
+            window.location.href = '@Url.Action("UpdatePhone", "Account")';
+        }
+        function updateEmail() {
+            window.location.href = '@Url.Action("UpdateEmail", "Account")';
+        }
+    </script>
+</main>
+</html>
